@@ -55,4 +55,23 @@ public class ArraySortService {
             k++;
         }
     }
+
+    public void insertionSort(CustomArray array) throws ArrayException {
+        insertionSort(array, 0, array.length() - 1);
+    }
+
+    public void insertionSort(CustomArray array, int left, int right) throws ArrayException {
+        for (int i = left + 1; i <= right; i++) {
+            if (i == 0) {
+                continue;
+            }
+
+            if (array.getElement(i) < array.getElement(i - 1)) {
+                int buffer = array.getElement(i);
+                array.setElement(i, array.getElement(i - 1));
+                array.setElement(i - 1, buffer);
+                i -= 2;
+            }
+        }
+    }
 }
