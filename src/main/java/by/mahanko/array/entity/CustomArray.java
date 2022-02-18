@@ -37,4 +37,14 @@ public class CustomArray {
 
         array[index] = value;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int element : array) {
+            stringBuilder.append(element+' ');
+        }
+
+        return stringBuilder.toString();
+    }
 }
