@@ -3,6 +3,9 @@ package by.mahanko.array.entity;
 public class CustomArray {
     private int[] array;
 
+    public CustomArray() {
+    }
+
     public CustomArray(int... array) {
         this.array = array;
     }
@@ -13,6 +16,10 @@ public class CustomArray {
 
     public int[] getArray() {
         return array.clone();
+    }
+
+    public void setArray(int... array) {
+        this.array = array;
     }
 
     public int getElement(int index) throws ArrayException {
