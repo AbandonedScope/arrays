@@ -23,7 +23,7 @@ public class CustomArray {
     }
 
     public int getElement(int index) throws ArrayException {
-        if (index < 0 || index>= array.length) {
+        if (index < 0 || index >= array.length) {
             throw new ArrayException();
         }
 
@@ -31,7 +31,7 @@ public class CustomArray {
     }
 
     public void setElement(int index, int value) throws ArrayException {
-        if (index < 0 || index>= array.length) {
+        if (index < 0 || index >= array.length) {
             throw new ArrayException();
         }
 
@@ -42,7 +42,7 @@ public class CustomArray {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         for (int element : array) {
-            stringBuilder.append(element+' ');
+            stringBuilder.append(element + " ");
         }
 
         return stringBuilder.toString();
