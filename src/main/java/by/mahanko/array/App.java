@@ -2,6 +2,7 @@ package by.mahanko.array;
 
 import by.mahanko.array.entity.CustomArray;
 import by.mahanko.array.service.ArrayCalculateService;
+import by.mahanko.array.service.ArrayManipulationService;
 import by.mahanko.array.service.ArraySearchService;
 import by.mahanko.array.service.ArraySortService;
 
@@ -13,6 +14,7 @@ public class App {
         ArraySortService sorter = new ArraySortService();
         ArrayCalculateService calculator = new ArrayCalculateService();
         ArraySearchService searcher = new ArraySearchService();
+        ArrayManipulationService manipulator = new ArrayManipulationService();
         try {
             sorter.mergeSort(array);
             System.out.println(calculator.countElementsSum(array));
@@ -22,6 +24,12 @@ public class App {
             System.out.println(searcher.findAmountOfPositiveElements(array) + " - positive");
             System.out.println(searcher.findMaximum(array) + " - maximum");
             System.out.println(searcher.findMinimum(array) + " - minimum");
+            manipulator.replaceAllElementInRegion(array, 0, 100000, -5);
+            System.out.println(array);
+
+            System.out.println(searcher.findAmountOfNegativeElements(array) + " - negative");
+            manipulator.replaceAllNegativeElements(array, 5);
+            System.out.println(array);
 
             long end = System.nanoTime();
 
