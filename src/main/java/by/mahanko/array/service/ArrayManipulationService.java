@@ -21,7 +21,7 @@ public class ArrayManipulationService {
             }
         }
 
-        logger.info("Array negative elements were replaced with : " + valueToReplaceWith);
+        logger.info("Array negative elements were replaced with - " + valueToReplaceWith);
     }
 
     public void replaceAllElementInRegion(CustomArray array, int lowerBound, int uppedBound, int valueToReplaceWith) throws CustomException {
@@ -36,6 +36,6 @@ public class ArrayManipulationService {
             }
         }
 
-        logger.info("Array elements in region from " + lowerBound + " to " + uppedBound + " were replaced with : " + valueToReplaceWith);
+        logger.info("Array elements in region from " + lowerBound + " to " + uppedBound + " were replaced with - " + valueToReplaceWith);
     }
 }

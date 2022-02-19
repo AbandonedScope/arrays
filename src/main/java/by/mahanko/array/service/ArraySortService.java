@@ -3,7 +3,12 @@ package by.mahanko.array.service;
 import by.mahanko.array.exception.CustomException;
 import by.mahanko.array.entity.CustomArray;
 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 public class ArraySortService {
+    static Logger logger = LogManager.getLogger(ArraySortService.class.getName());
+
     public void mergeSort(CustomArray array) throws CustomException {
         mergeSort(array, 0, array.length() - 1);
     }
@@ -73,7 +78,7 @@ public class ArraySortService {
     }
 
     public void insertionSort(CustomArray array, int leftBound, int rightBound) throws CustomException {
-        if (rightBound > leftBound || array.length() == 0) {
+        if (rightBound < leftBound || array.length() == 0) {
             throw new CustomException();
         }
 
@@ -89,6 +94,8 @@ public class ArraySortService {
                 i -= 2;
             }
         }
+
+        logger.info("Array was sorted by using Insertion Sort");
     }
 
     public void bubbleSort(CustomArray array) throws CustomException {
@@ -109,5 +116,7 @@ public class ArraySortService {
                 }
             }
         }
+
+        logger.info("Array was sorted by using Bubble Sort");
     }
 }
