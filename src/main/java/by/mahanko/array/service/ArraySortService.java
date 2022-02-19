@@ -8,16 +8,28 @@ public class ArraySortService {
         mergeSort(array, 0, array.length() - 1);
     }
 
-    public void mergeSort(CustomArray array, int left, int right) throws ArrayException {
-        if (left < right) {
-            int middle = (right - left) / 2 + left;
-            mergeSort(array, left, middle);
-            mergeSort(array, middle + 1, right);
-            merge(array, left, middle, right);
+    public void mergeSort(CustomArray array, int leftBound, int rightBound) throws ArrayException {
+        if (array.length() == 0 || leftBound > rightBound) {
+            throw new ArrayException();
         }
+
+        int middle = (rightBound - leftBound) / 2 + leftBound;
+        if (middle > leftBound) {
+            mergeSort(array, leftBound, middle);
+        }
+
+        if (middle + 1 < rightBound) {
+            mergeSort(array, middle + 1, rightBound);
+        }
+
+        merge(array, leftBound, middle, rightBound);
     }
 
     private void merge(CustomArray array, int leftBound, int middle, int rightBound) throws ArrayException {
+        if (rightBound < leftBound) {
+            throw new ArrayException();
+        }
+
         int leftArrayPartLength = middle - leftBound + 1;
         int rightArrayPartLength = rightBound - middle;
         int[] leftArrayPart = new int[leftArrayPartLength];
@@ -60,8 +72,12 @@ public class ArraySortService {
         insertionSort(array, 0, array.length() - 1);
     }
 
-    public void insertionSort(CustomArray array, int left, int right) throws ArrayException {
-        for (int i = left + 1; i <= right; i++) {
+    public void insertionSort(CustomArray array, int leftBound, int rightBound) throws ArrayException {
+        if (rightBound > leftBound || array.length() == 0) {
+            throw new ArrayException();
+        }
+
+        for (int i = leftBound + 1; i <= rightBound; i++) {
             if (i == 0) {
                 continue;
             }
@@ -71,6 +87,26 @@ public class ArraySortService {
                 array.setElement(i, array.getElement(i - 1));
                 array.setElement(i - 1, buffer);
                 i -= 2;
+            }
+        }
+    }
+
+    public void bubbleSort(CustomArray array) throws ArrayException {
+        bubbleSort(array, 0, array.length() - 1);
+    }
+
+    public void bubbleSort(CustomArray array, int leftBound, int rightBound) throws ArrayException {
+        if (array.length() == 0 || rightBound > leftBound) {
+            throw new ArrayException();
+        }
+
+        for (int i = leftBound; i <= rightBound; i++) {
+            for (int j = 0; j < rightBound - i; j++) {
+                if (array.getElement(j) > array.getElement(j + 1)) {
+                    int buffer = array.getElement(j);
+                    array.setElement(j, array.getElement(j + 1));
+                    array.setElement(j + 1, buffer);
+                }
             }
         }
     }
