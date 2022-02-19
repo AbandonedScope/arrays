@@ -18,7 +18,7 @@ public class ArrayManipulationService {
     }
 
     public void replaceAllElementInRegion(CustomArray array, int lowerBound, int uppedBound, int valueToReplaceWith) throws CustomException {
-        if (array.length() == 0) {
+        if (array.length() == 0 || lowerBound > uppedBound) {
             throw  new CustomException();
         }
 
