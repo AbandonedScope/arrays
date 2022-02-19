@@ -16,20 +16,11 @@ public class App {
         ArraySearchService searcher = new ArraySearchService();
         ArrayManipulationService manipulator = new ArrayManipulationService();
         try {
-            sorter.mergeSort(array);
-            System.out.println(calculator.countElementsSum(array));
-            System.out.println(calculator.countAverage(array));
-            System.out.println(array);
-            System.out.println(searcher.findAmountOfNegativeElements(array) + " - negative");
-            System.out.println(searcher.findAmountOfPositiveElements(array) + " - positive");
-            System.out.println(searcher.findMaximum(array) + " - maximum");
-            System.out.println(searcher.findMinimum(array) + " - minimum");
-            manipulator.replaceAllElementInRegion(array, 0, 100000, -5);
-            System.out.println(array);
+            sorter.insertionSort(array);
 
-            System.out.println(searcher.findAmountOfNegativeElements(array) + " - negative");
+            manipulator.replaceAllElementInRegion(array, 0, 100000, -5);
+
             manipulator.replaceAllNegativeElements(array, 5);
-            System.out.println(array);
 
             long end = System.nanoTime();
 
