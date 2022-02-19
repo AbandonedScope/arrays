@@ -1,16 +1,16 @@
 package by.mahanko.array.service;
 
-import by.mahanko.array.entity.ArrayException;
+import by.mahanko.array.exception.CustomException;
 import by.mahanko.array.entity.CustomArray;
 
 public class ArraySortService {
-    public void mergeSort(CustomArray array) throws ArrayException {
+    public void mergeSort(CustomArray array) throws CustomException {
         mergeSort(array, 0, array.length() - 1);
     }
 
-    public void mergeSort(CustomArray array, int leftBound, int rightBound) throws ArrayException {
+    public void mergeSort(CustomArray array, int leftBound, int rightBound) throws CustomException {
         if (array.length() == 0 || leftBound > rightBound) {
-            throw new ArrayException();
+            throw new CustomException();
         }
 
         int middle = (rightBound - leftBound) / 2 + leftBound;
@@ -25,9 +25,9 @@ public class ArraySortService {
         merge(array, leftBound, middle, rightBound);
     }
 
-    private void merge(CustomArray array, int leftBound, int middle, int rightBound) throws ArrayException {
+    private void merge(CustomArray array, int leftBound, int middle, int rightBound) throws CustomException {
         if (rightBound < leftBound) {
-            throw new ArrayException();
+            throw new CustomException();
         }
 
         int leftArrayPartLength = middle - leftBound + 1;
@@ -68,13 +68,13 @@ public class ArraySortService {
         }
     }
 
-    public void insertionSort(CustomArray array) throws ArrayException {
+    public void insertionSort(CustomArray array) throws CustomException {
         insertionSort(array, 0, array.length() - 1);
     }
 
-    public void insertionSort(CustomArray array, int leftBound, int rightBound) throws ArrayException {
+    public void insertionSort(CustomArray array, int leftBound, int rightBound) throws CustomException {
         if (rightBound > leftBound || array.length() == 0) {
-            throw new ArrayException();
+            throw new CustomException();
         }
 
         for (int i = leftBound + 1; i <= rightBound; i++) {
@@ -91,13 +91,13 @@ public class ArraySortService {
         }
     }
 
-    public void bubbleSort(CustomArray array) throws ArrayException {
+    public void bubbleSort(CustomArray array) throws CustomException {
         bubbleSort(array, 0, array.length() - 1);
     }
 
-    public void bubbleSort(CustomArray array, int leftBound, int rightBound) throws ArrayException {
+    public void bubbleSort(CustomArray array, int leftBound, int rightBound) throws CustomException {
         if (array.length() == 0 || rightBound > leftBound) {
-            throw new ArrayException();
+            throw new CustomException();
         }
 
         for (int i = leftBound; i <= rightBound; i++) {
