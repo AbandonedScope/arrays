@@ -4,11 +4,7 @@ import by.mahanko.array.exception.CustomFileDoesntExistException;
 import by.mahanko.array.reader.CustomArrayTxtReader;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class CustomArrayTxtReaderTest {
