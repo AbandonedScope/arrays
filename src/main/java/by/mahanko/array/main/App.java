@@ -1,4 +1,4 @@
-package by.mahanko.array;
+package by.mahanko.array.main;
 
 import by.mahanko.array.entity.CustomArray;
 import by.mahanko.array.service.impl.ArrayCalculateServiceImpl;
