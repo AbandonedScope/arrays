@@ -12,19 +12,18 @@ import java.util.stream.IntStream;
 public class CustomStringParser {
     private static Logger logger = LogManager.getLogger(CustomStringParser.class.getName());
 
-    public int[] parseString(String stringToParse) {
+    public int[] parseString(String stringToParse) throws CustomException {
         int[] result = null;
-        try {
-            CustomArrayStringValidator validator = new CustomArrayStringValidator();
-            if (validator.validateString(stringToParse)) {
-                result = Arrays.stream(stringToParse.split("\s+"))
-                        .flatMapToInt(num -> IntStream.of(Integer.parseInt(num)))
-                        .toArray();
-            }
-        } catch (CustomException exception) {
-            logger.log(Level.ERROR, "Empty or null string");
+        CustomArrayStringValidator validator = new CustomArrayStringValidator();
+        if (validator.validateString(stringToParse)) {
+            result = Arrays.stream(stringToParse.split("\s+"))
+                    .flatMapToInt(num -> IntStream.of(Integer.parseInt(num)))
+                    .toArray();
+        } else {
+            logger.log(Level.ERROR, "Invalid string : " + stringToParse);
+            throw new CustomException();
         }
 
-        return  result;
+        return result;
     }
 }
