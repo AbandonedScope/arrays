@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="Unused import removed">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="25IZ7EQOyWkAUTJM8cjEJ6caggz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last.edited.regexp" value="-1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Download/Taskmgr" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="TestNG.&lt;default&gt;">
+    <configuration name="CustomArrayStringValidatorTest.validateCorrectStringTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="arrays" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.mahanko.array.validator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.mahanko.array.validator" />
+      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.validator.CustomArrayStringValidatorTest" />
+      <option name="METHOD_NAME" value="validateCorrectStringTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomArrayStringValidatorTest.validateEmptyStringTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="arrays" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.mahanko.array.validator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.mahanko.array.validator" />
+      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.validator.CustomArrayStringValidatorTest" />
+      <option name="METHOD_NAME" value="validateEmptyStringTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomStringParserTest.parseStringCorrectStringToParseTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="arrays" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.mahanko.array.parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.mahanko.array.parser" />
+      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.parser.CustomStringParserTest" />
+      <option name="METHOD_NAME" value="parseStringCorrectStringToParseTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomStringParserTest.parseStringIncorrectStringToParseTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="arrays" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.mahanko.array.parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.mahanko.array.parser" />
+      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.parser.CustomStringParserTest" />
+      <option name="METHOD_NAME" value="parseStringIncorrectStringToParseTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="arrays" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.&lt;default&gt;" />
+        <item itemvalue="TestNG.CustomStringParserTest.parseStringIncorrectStringToParseTest" />
+        <item itemvalue="TestNG.CustomStringParserTest.parseStringCorrectStringToParseTest" />
+        <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateEmptyStringTest" />
+        <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateCorrectStringTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="" />
+      <created>1645216397178</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645216397178</updated>
+      <workItem from="1645216399339" duration="10203000" />
+      <workItem from="1645262061199" duration="24444000" />
+      <workItem from="1645354241097" duration="16525000" />
+    </task>
+    <task id="LOCAL-00021" summary="findMaximum, findMinimum, findAmountOfPositiveElements, findAmountOfNegativeElements methods added">
+      <created>1645267288441</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1645267288441</updated>
+    </task>
+    <task id="LOCAL-00022" summary="added more checks">
+      <created>1645267358872</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1645267358872</updated>
+    </task>
+    <task id="LOCAL-00023" summary="ArrayException throwing added">
+      <created>1645267752620</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1645267752620</updated>
+    </task>
+    <task id="LOCAL-00024" summary="ArrayException renamed to CustomException">
+      <created>1645268069679</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1645268069679</updated>
+    </task>
+    <task id="LOCAL-00025" summary="replaceAllNegativeElements, replaceAllElementInRegion methods added">
+      <created>1645268100956</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1645268100956</updated>
+    </task>
+    <task id="LOCAL-00026" summary="more checks">
+      <created>1645268608659</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1645268608659</updated>
+    </task>
+    <task id="LOCAL-00027" summary="CustomException throwing conditions changed">
+      <created>1645268644471</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1645268644471</updated>
+    </task>
+    <task id="LOCAL-00028" summary="log4j 2 dependencies added">
+      <created>1645269309932</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1645269309932</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Log4j2 dependencies added">
+      <created>1645273627556</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1645273627556</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Logging configuration file created">
+      <created>1645273657207</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1645273657207</updated>
+    </task>
+    <task id="LOCAL-00031" summary="logging added">
+      <created>1645273677546</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1645273677546</updated>
+    </task>
+    <task id="LOCAL-00032" summary="logging added">
+      <created>1645273952082</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1645273952082</updated>
+    </task>
+    <task id="LOCAL-00033" summary="logging added">
+      <created>1645275668056</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1645275668056</updated>
+    </task>
+    <task id="LOCAL-00034" summary="log configuration file added">
+      <created>1645275773308</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1645275773308</updated>
+    </task>
+    <task id="LOCAL-00035" summary="useless checks removed">
+      <created>1645275803805</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1645275803805</updated>
+    </task>
+    <task id="LOCAL-00036" summary="methods added">
+      <created>1645288617698</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1645288617698</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Implements ArrayCalculateService interface">
+      <created>1645288654772</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1645288654772</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Implements ArrayManipulationService interface">
+      <created>1645288666480</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1645288666480</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Implements ArraySearchService interface">
+      <created>1645288686179</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1645288686179</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Implements ArraySortService interface">
+      <created>1645288700573</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1645288700573</updated>
+    </task>
+    <task id="LOCAL-00041" summary="update">
+      <created>1645289235584</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1645289235584</updated>
+    </task>
+    <task id="LOCAL-00042" summary="TestNG dependence added">
+      <created>1645297186379</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1645297186379</updated>
+    </task>
+    <task id="LOCAL-00043" summary="ArrayCalculateServiceImpl tests added">
+      <created>1645303179720</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1645303179720</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Checking if &quot;array&quot; method argument equals null">
+      <created>1645303231699</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1645303231699</updated>
+    </task>
+    <task id="LOCAL-00045" summary="readStringsFromFile method added">
+      <created>1645394352970</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1645394352970</updated>
+    </task>
+    <task id="LOCAL-00046" summary="private fields now final">
+      <created>1645394403990</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1645394403990</updated>
+    </task>
+    <task id="LOCAL-00047" summary="moved to by.mahanko.array.main package">
+      <created>1645394460180</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1645394460180</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Initial create">
+      <created>1645394473185</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1645394473185</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Initial create">
+      <created>1645394481895</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1645394481895</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Initial create">
+      <created>1645394486950</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1645394486950</updated>
+    </task>
+    <task id="LOCAL-00051" summary="readStringsFromFileNonexistentFileTest, readStringsFromFileExistentFileTest tests added">
+      <created>1645394518046</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1645394518046</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Initial create">
+      <created>1645394751272</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1645394751272</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Initial create">
+      <created>1645395583933</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1645395583933</updated>
+    </task>
+    <task id="LOCAL-00054" summary="regular expression and validateString method added">
+      <created>1645396309284</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1645396309284</updated>
+    </task>
+    <task id="LOCAL-00055" summary="validateCorrectStringTest, validateEmptyStringTest tests added">
+      <created>1645397586267</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1645397586267</updated>
+    </task>
+    <task id="LOCAL-00056" summary="empty string check added">
+      <created>1645397625161</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1645397625161</updated>
+    </task>
+    <task id="LOCAL-00057" summary="null string check added">
+      <created>1645397990936</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1645397990936</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Initial create">
+      <created>1645398448968</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1645398448968</updated>
+    </task>
+    <task id="LOCAL-00059" summary="parseString method added">
+      <created>1645398470734</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1645398470734</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Initial create">
+      <created>1645399622357</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1645399622357</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Odd imports removed">
+      <created>1645399663737</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1645399663737</updated>
+    </task>
+    <task id="LOCAL-00062" summary="exception throwing added">
+      <created>1645399724363</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1645399724363</updated>
+    </task>
+    <task id="LOCAL-00063" summary="logging added">
+      <created>1645399750426</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1645399750426</updated>
+    </task>
+    <task id="LOCAL-00064" summary="parseStringCorrectStringToParseTest, parseStringIncorrectStringToParseTest tests added">
+      <created>1645399792687</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1645399792687</updated>
+    </task>
+    <task id="LOCAL-00065" summary="TimeBasedTriggeringPolicy interval set to 1">
+      <created>1645399840997</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1645399840997</updated>
+    </task>
+    <task id="LOCAL-00066" summary="createCustomArray method added">
+      <created>1645399989902</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1645399989902</updated>
+    </task>
+    <task id="LOCAL-00067" summary=".idea, target added">
+      <created>1645400293620</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1645400293620</updated>
+    </task>
+    <task id="LOCAL-00068" summary="logs added">
+      <created>1645400324379</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1645400324379</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Unused import removed">
+      <created>1645400461967</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1645400461967</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Implements ArraySearchService interface" />
+    <MESSAGE value="Implements ArraySortService interface" />
+    <MESSAGE value="update" />
+    <MESSAGE value="TestNG dependence added" />
+    <MESSAGE value="ArrayCalculateServiceImpl tests added" />
+    <MESSAGE value="Checking if &quot;array&quot; method argument equals null" />
+    <MESSAGE value="readStringsFromFile method added" />
+    <MESSAGE value="private fields now final" />
+    <MESSAGE value="moved to by.mahanko.array.main package" />
+    <MESSAGE value="readStringsFromFileNonexistentFileTest, readStringsFromFileExistentFileTest tests added" />
+    <MESSAGE value="regular expression and validateString method added" />
+    <MESSAGE value="validateCorrectStringTest, validateEmptyStringTest tests added" />
+    <MESSAGE value="empty string check added" />
+    <MESSAGE value="null string check added" />
+    <MESSAGE value="parseString method added" />
+    <MESSAGE value="Initial create" />
+    <MESSAGE value="Odd imports removed" />
+    <MESSAGE value="exception throwing added" />
+    <MESSAGE value="logging added" />
+    <MESSAGE value="parseStringCorrectStringToParseTest, parseStringIncorrectStringToParseTest tests added" />
+    <MESSAGE value="TimeBasedTriggeringPolicy interval set to 1" />
+    <MESSAGE value="createCustomArray method added" />
+    <MESSAGE value=".idea, target added" />
+    <MESSAGE value="logs added" />
+    <MESSAGE value="Unused import removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unused import removed" />
+  </component>
+</project>
