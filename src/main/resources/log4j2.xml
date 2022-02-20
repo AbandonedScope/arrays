@@ -13,7 +13,7 @@
                      fileName="${filename}.log"
                      filePattern="${filename}-%d{yyyy-MM-dd}.log">
             <PatternLayout pattern="%d{DEFAULT} %-5level %t : %logger{1} - %n%m%n"/>
-            <TimeBasedTriggeringPolicy/>
+            <TimeBasedTriggeringPolicy interval="1"/>
         </RollingFile>
     </Appenders>
 
