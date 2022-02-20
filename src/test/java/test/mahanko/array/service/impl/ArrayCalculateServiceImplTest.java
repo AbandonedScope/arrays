@@ -9,11 +9,11 @@ import org.testng.annotations.Test;
 public class ArrayCalculateServiceImplTest {
 
     private ArrayCalculateServiceImpl service = new ArrayCalculateServiceImpl();
-    private CustomArray entityBaseArray = new CustomArray(5, 8, 12, 3, -4, 6, -9);
-    private CustomArray entityEqualPositiveNumbersArray = new CustomArray(2, 2, 2, 2, 2, 2, 2, 2);
-    private CustomArray entityEqualNegativeNumbersArray = new CustomArray(-2, -2, -2, -2, -2, -2, -2, -2);
-    private CustomArray entityArrayOfZeros = new CustomArray(0, 0, 0, 0, 0, 0, 0, 0);
-    private CustomArray entityEmptyArray = new CustomArray(new int[0]);
+    private final CustomArray entityBaseArray = new CustomArray(5, 8, 12, 3, -4, 6, -9);
+    private final CustomArray entityEqualPositiveNumbersArray = new CustomArray(2, 2, 2, 2, 2, 2, 2, 2);
+    private final CustomArray entityEqualNegativeNumbersArray = new CustomArray(-2, -2, -2, -2, -2, -2, -2, -2);
+    private final CustomArray entityArrayOfZeros = new CustomArray(0, 0, 0, 0, 0, 0, 0, 0);
+    private final CustomArray entityEmptyArray = new CustomArray(new int[0]);
 
     @Test
     public void countElementSumBaseArrayTest() throws CustomException {
