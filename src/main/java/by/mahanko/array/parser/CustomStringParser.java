@@ -4,4 +4,5 @@ import by.mahanko.array.exception.CustomException;
 
 public interface CustomStringParser {
     int[] parseString(String stringToParse) throws CustomException;
+    int[] parseValidString(String stringToParse) throws CustomException;
 }
