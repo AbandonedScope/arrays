@@ -26,7 +26,7 @@ public class CustomArray {
 
     public int getElement(int index) throws CustomException {
         if (index < 0 || index >= array.length) {
-            throw new CustomException();
+            throw new CustomException("Index out of range");
         }
 
         return array[index];
@@ -34,7 +34,7 @@ public class CustomArray {
 
     public void setElement(int index, int value) throws CustomException {
         if (index < 0 || index >= array.length) {
-            throw new CustomException();
+            throw new CustomException("Index out of range");
         }
 
         array[index] = value;
