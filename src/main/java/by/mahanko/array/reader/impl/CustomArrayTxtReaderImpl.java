@@ -1,4 +1,4 @@
-package by.mahanko.array.reader;
+package by.mahanko.array.reader.impl;
 
 import by.mahanko.array.exception.CustomFileDoesntExistException;
 import org.apache.logging.log4j.Level;
