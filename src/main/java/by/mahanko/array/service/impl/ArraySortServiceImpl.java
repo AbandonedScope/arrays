@@ -4,6 +4,7 @@ import by.mahanko.array.exception.CustomException;
 import by.mahanko.array.entity.CustomArray;
 
 import by.mahanko.array.service.ArraySortService;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -33,6 +34,7 @@ public class ArraySortServiceImpl implements ArraySortService {
 
     private void merge(CustomArray array, int leftBound, int middle, int rightBound) throws CustomException {
         if (rightBound < leftBound) {
+            logger.log(Level.ERROR, "Lower bound more than upper bound");
             throw new CustomException();
         }
 
@@ -80,6 +82,7 @@ public class ArraySortServiceImpl implements ArraySortService {
 
     public void insertionSort(CustomArray array, int leftBound, int rightBound) throws CustomException {
         if (rightBound < leftBound || array.length() == 0) {
+            logger.log(Level.ERROR, "Array length equals 0 or left bound more than right bound");
             throw new CustomException();
         }
 
@@ -104,7 +107,8 @@ public class ArraySortServiceImpl implements ArraySortService {
     }
 
     public void bubbleSort(CustomArray array, int leftBound, int rightBound) throws CustomException {
-        if (array.length() == 0 || rightBound > leftBound) {
+        if (array.length() == 0 || rightBound < leftBound) {
+            logger.log(Level.ERROR, "Array length equals 0 or left bound more than right bound");
             throw new CustomException();
         }
 
