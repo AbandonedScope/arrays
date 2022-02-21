@@ -1,14 +1,14 @@
 package test.mahanko.array.reader;
 
 import by.mahanko.array.exception.CustomFileDoesntExistException;
-import by.mahanko.array.reader.CustomArrayTxtReader;
+import by.mahanko.array.reader.CustomArrayTxtReaderImpl;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.Arrays;
 import java.util.List;
 
 public class CustomArrayTxtReaderTest {
-    private CustomArrayTxtReader reader = new CustomArrayTxtReader();
+    private CustomArrayTxtReaderImpl reader = new CustomArrayTxtReaderImpl();
     private final String pathToNonexistentFile = "non-existent-file.txt";
     private final String pathToExistFile = "D:/arrays/src/test/resources/customarraytxtreadertestfile.txt";
 

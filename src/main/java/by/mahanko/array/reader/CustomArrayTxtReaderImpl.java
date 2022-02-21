@@ -13,8 +13,8 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomArrayTxtReader {
-    static Logger logger = LogManager.getLogger(CustomArrayTxtReader.class.getName());
+public class CustomArrayTxtReaderImpl {
+    static Logger logger = LogManager.getLogger(CustomArrayTxtReaderImpl.class.getName());
 
     public List<String> readStringsFromFile(String path) throws CustomFileDoesntExistException {
         if (!Files.exists(Paths.get(path))) {
