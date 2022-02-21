@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="findMaximum, findMinimum return type changed to OptionalInt&#10;findAmountOfPositiveElements, findAmountOfNegativeElements return type changed to long">
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/impl/CustomArrayTxtReaderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/impl/CustomArrayTxtReaderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayCalculateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayCalculateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayManipulationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayManipulationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySearchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/mahanko/array/service/impl/ArrayCalculateServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/mahanko/array/service/impl/ArrayCalculateServiceImplTest.java" afterDir="false" />
+    <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="extra tests added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySortServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySortServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,30 +53,17 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="TestNG.ArrayCalculateServiceImplTest">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.mahanko.array.main.App" />
+  <component name="RunManager" selected="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheBeginAndEndOfTheStringTest">
+    <configuration name="CustomArrayStringValidatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="arrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.mahanko.array.main.*" />
+          <option name="PATTERN" value="test.mahanko.array.validator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayCalculateServiceImplTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="arrays" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.mahanko.array.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.mahanko.array.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.service.impl.ArrayCalculateServiceImplTest" />
+      <option name="PACKAGE_NAME" value="test.mahanko.array.validator" />
+      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.validator.CustomArrayStringValidatorTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -89,17 +71,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayCalculateServiceImplTest.countAverageEmptyArrayTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomArrayStringValidatorTest.validateBlankStringTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="arrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.mahanko.array.service.impl.*" />
+          <option name="PATTERN" value="test.mahanko.array.validator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.mahanko.array.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.service.impl.ArrayCalculateServiceImplTest" />
-      <option name="METHOD_NAME" value="countAverageEmptyArrayTest" />
+      <option name="PACKAGE_NAME" value="test.mahanko.array.validator" />
+      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.validator.CustomArrayStringValidatorTest" />
+      <option name="METHOD_NAME" value="validateBlankStringTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -107,17 +89,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayCalculateServiceImplTest.countElementSumBaseArrayTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomArrayStringValidatorTest.validateSpaceAtTheBeginAndEndOfTheStringTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="arrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.mahanko.array.service.impl.*" />
+          <option name="PATTERN" value="test.mahanko.array.validator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.mahanko.array.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.service.impl.ArrayCalculateServiceImplTest" />
-      <option name="METHOD_NAME" value="countElementSumBaseArrayTest" />
+      <option name="PACKAGE_NAME" value="test.mahanko.array.validator" />
+      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.validator.CustomArrayStringValidatorTest" />
+      <option name="METHOD_NAME" value="validateSpaceAtTheBeginAndEndOfTheStringTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -125,17 +107,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomArrayTxtReaderTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomArrayStringValidatorTest.validateSpaceAtTheBeginOfTheStringTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="arrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.mahanko.array.reader.*" />
+          <option name="PATTERN" value="test.mahanko.array.validator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.mahanko.array.reader" />
-      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.reader.CustomArrayTxtReaderTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="test.mahanko.array.validator" />
+      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.validator.CustomArrayStringValidatorTest" />
+      <option name="METHOD_NAME" value="validateSpaceAtTheBeginOfTheStringTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomArrayStringValidatorTest.validateSpaceAtTheEndOfTheStringTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="arrays" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.mahanko.array.validator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.mahanko.array.validator" />
+      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.validator.CustomArrayStringValidatorTest" />
+      <option name="METHOD_NAME" value="validateSpaceAtTheEndOfTheStringTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -144,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ArrayCalculateServiceImplTest" />
-        <item itemvalue="TestNG.ArrayCalculateServiceImplTest.countAverageEmptyArrayTest" />
-        <item itemvalue="TestNG.ArrayCalculateServiceImplTest.countElementSumBaseArrayTest" />
-        <item itemvalue="TestNG.CustomArrayTxtReaderTest" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheBeginAndEndOfTheStringTest" />
+        <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheEndOfTheStringTest" />
+        <item itemvalue="TestNG.CustomArrayStringValidatorTest" />
+        <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheBeginOfTheStringTest" />
+        <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateBlankStringTest" />
       </list>
     </recent_temporary>
   </component>
@@ -164,77 +165,7 @@
       <workItem from="1645262061199" duration="24444000" />
       <workItem from="1645354241097" duration="17525000" />
       <workItem from="1645420414671" duration="1260000" />
-      <workItem from="1645441104954" duration="12173000" />
-    </task>
-    <task id="LOCAL-00052" summary="Initial create">
-      <created>1645394751272</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1645394751272</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Initial create">
-      <created>1645395583933</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1645395583933</updated>
-    </task>
-    <task id="LOCAL-00054" summary="regular expression and validateString method added">
-      <created>1645396309284</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1645396309284</updated>
-    </task>
-    <task id="LOCAL-00055" summary="validateCorrectStringTest, validateEmptyStringTest tests added">
-      <created>1645397586267</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1645397586267</updated>
-    </task>
-    <task id="LOCAL-00056" summary="empty string check added">
-      <created>1645397625161</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1645397625161</updated>
-    </task>
-    <task id="LOCAL-00057" summary="null string check added">
-      <created>1645397990936</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1645397990936</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Initial create">
-      <created>1645398448968</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1645398448968</updated>
-    </task>
-    <task id="LOCAL-00059" summary="parseString method added">
-      <created>1645398470734</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1645398470734</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Initial create">
-      <created>1645399622357</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1645399622357</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Odd imports removed">
-      <created>1645399663737</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1645399663737</updated>
+      <workItem from="1645441104954" duration="14367000" />
     </task>
     <task id="LOCAL-00062" summary="exception throwing added">
       <created>1645399724363</created>
@@ -509,7 +440,77 @@
       <option name="project" value="LOCAL" />
       <updated>1645470086764</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="countElementsSum rewritten using Stream API">
+      <created>1645470284295</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1645470284295</updated>
+    </task>
+    <task id="LOCAL-00102" summary="replaceAllNegativeElements, replaceAllElementInRegion rewritten using Stream API">
+      <created>1645470339812</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1645470339812</updated>
+    </task>
+    <task id="LOCAL-00103" summary="findMaximum, findMinimum, findAmountOfPositiveElements, findAmountOfNegativeElements rewritten using Stream API">
+      <created>1645470404461</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1645470404461</updated>
+    </task>
+    <task id="LOCAL-00104" summary="odd tests removed">
+      <created>1645470425194</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1645470425194</updated>
+    </task>
+    <task id="LOCAL-00105" summary="exceptions messages added">
+      <created>1645470451246</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1645470451246</updated>
+    </task>
+    <task id="LOCAL-00106" summary="exception message added">
+      <created>1645470469796</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1645470469796</updated>
+    </task>
+    <task id="LOCAL-00107" summary="exception message added">
+      <created>1645470481274</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1645470481274</updated>
+    </task>
+    <task id="LOCAL-00108" summary="some changes">
+      <created>1645470491996</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1645470491996</updated>
+    </task>
+    <task id="LOCAL-00109" summary="regex added">
+      <created>1645472327944</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1645472327944</updated>
+    </task>
+    <task id="LOCAL-00110" summary="extra tests added">
+      <created>1645472364147</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1645472364147</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,14 +529,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Initial create" />
-    <MESSAGE value="CustomArray setArray clone" />
-    <MESSAGE value="log level changed from error to warn" />
-    <MESSAGE value="more logs" />
-    <MESSAGE value="constructors added" />
-    <MESSAGE value="Initial create, createCustomArray method added" />
-    <MESSAGE value="moved to package impl" />
-    <MESSAGE value="renamed, moved to package impl" />
     <MESSAGE value="something" />
     <MESSAGE value="Initial create, parseString method added" />
     <MESSAGE value="renamed" />
@@ -550,10 +543,18 @@
     <MESSAGE value="length == 0 check replaced with isEmpty method" />
     <MESSAGE value="parser check added" />
     <MESSAGE value="equalsTo, hashCode methods override" />
-    <MESSAGE value="some changes" />
     <MESSAGE value="countAverage return type changed to OptionalDouble" />
     <MESSAGE value="findMaximum, findMinimum return type changed to OptionalInt&#10;findAmountOfPositiveElements, findAmountOfNegativeElements return type changed to long" />
-    <option name="LAST_COMMIT_MESSAGE" value="findMaximum, findMinimum return type changed to OptionalInt&#10;findAmountOfPositiveElements, findAmountOfNegativeElements return type changed to long" />
+    <MESSAGE value="countElementsSum rewritten using Stream API" />
+    <MESSAGE value="replaceAllNegativeElements, replaceAllElementInRegion rewritten using Stream API" />
+    <MESSAGE value="findMaximum, findMinimum, findAmountOfPositiveElements, findAmountOfNegativeElements rewritten using Stream API" />
+    <MESSAGE value="odd tests removed" />
+    <MESSAGE value="exceptions messages added" />
+    <MESSAGE value="exception message added" />
+    <MESSAGE value="some changes" />
+    <MESSAGE value="regex added" />
+    <MESSAGE value="extra tests added" />
+    <option name="LAST_COMMIT_MESSAGE" value="extra tests added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
