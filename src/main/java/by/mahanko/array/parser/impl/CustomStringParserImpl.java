@@ -22,7 +22,21 @@ public class CustomStringParserImpl implements CustomStringParser {
                     .toArray();
         } else {
             logger.log(Level.ERROR, "Invalid string : " + stringToParse);
-            throw new CustomException();
+            throw new CustomException("");
+        }
+
+        return result;
+    }
+
+    public int[] parseValidString(String stringToParse) throws CustomException {
+        int[] result = null;
+        try {
+            result = Arrays.stream(stringToParse.split("\s+"))
+                    .flatMapToInt(num -> IntStream.of(Integer.parseInt(num)))
+                    .toArray();
+        } catch (Exception exception) {
+            logger.log(Level.ERROR, "Invalid string : " + stringToParse);
+            throw new CustomException(exception.getMessage());
         }
 
         return result;
