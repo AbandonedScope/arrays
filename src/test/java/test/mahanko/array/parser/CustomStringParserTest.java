@@ -1,12 +1,12 @@
 package test.mahanko.array.parser;
 
 import by.mahanko.array.exception.CustomException;
-import by.mahanko.array.parser.CustomStringParser;
+import by.mahanko.array.parser.impl.CustomStringParserImpl;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CustomStringParserTest {
-    private CustomStringParser parser = new CustomStringParser();
+    private CustomStringParserImpl parser = new CustomStringParserImpl();
     private final String correctStringToParse = "1 -25 0 36 13 -2";
     private final String incorrectStringToParse = "1 --25 0 36 13 -2";
 
