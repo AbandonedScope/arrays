@@ -49,4 +49,42 @@ public class CustomArray {
 
         return stringBuilder.toString();
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+
+        if (obj == null || obj.getClass() != this.getClass()) {
+            return false;
+        }
+
+        if (obj instanceof CustomArray arrayToEqualTo) {
+            if (arrayToEqualTo.array == null || this.array == null) {
+                return arrayToEqualTo.array == null && this.array == null;
+            }
+
+            if (length() != arrayToEqualTo.length()) {
+                return false;
+            }
+
+            for (int i = 0; i < length(); i++) {
+                if (this.array[i] != arrayToEqualTo.array[i]) {
+                    return false;
+                }
+            }
+        } else {
+            return false;
+        }
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int hashCode = this.array.hashCode();
+        return hashCode;
+    }
+
 }
