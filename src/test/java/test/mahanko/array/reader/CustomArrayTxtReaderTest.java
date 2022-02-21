@@ -1,7 +1,7 @@
 package test.mahanko.array.reader;
 
 import by.mahanko.array.exception.CustomFileDoesntExistException;
-import by.mahanko.array.reader.CustomArrayTxtReaderImpl;
+import by.mahanko.array.reader.impl.CustomArrayTxtReaderImpl;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.Arrays;
