@@ -7,24 +7,25 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Arrays;
+import java.util.OptionalDouble;
+
 public class ArrayCalculateServiceImpl implements ArrayCalculateService {
     static Logger logger = LogManager.getLogger(ArrayCalculateServiceImpl.class.getName());
 
     public int countElementsSum(CustomArray array) throws CustomException {
         if (array == null || array.length() == 0) {
             logger.log(Level.ERROR, "Array equals null or array length equals 0");
-            throw new CustomException();
+            throw new CustomException("Array equals null or array length equals 0");
         }
-        int sum = 0;
-        for (int element : array.getArray()) {
-            sum += element;
-        }
+        int sum = Arrays.stream(array.getArray())
+                .sum();
         logger.info("Elements sum - " + sum);
         return sum;
     }
 
-    public double countAverage(CustomArray array) throws CustomException {
-        double average = countElementsSum(array) / (double) array.length();
+    public OptionalDouble countAverage(CustomArray array) {
+        OptionalDouble average = Arrays.stream(array.getArray()).average();
         logger.info("Array's average - " + average);
         return average;
     }
