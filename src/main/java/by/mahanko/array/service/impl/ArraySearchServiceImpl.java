@@ -7,58 +7,37 @@ import by.mahanko.array.service.ArraySearchService;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import java.util.Arrays;
+import java.util.OptionalInt;
+
 public class ArraySearchServiceImpl implements ArraySearchService {
     static Logger logger = LogManager.getLogger(ArraySearchServiceImpl.class.getName());
 
-    public int findMaximum(CustomArray array) throws CustomException {
-        int maximum = array.getElement(0);
-        for (int i = 1; i < array.length(); i++) {
-            if(maximum < array.getElement(i)) {
-                maximum = array.getElement(i);
-            }
-        }
-
-        logger.info("Array maximum - " + maximum);
-
+    public OptionalInt findMaximum(CustomArray array) {
+        OptionalInt maximum = Arrays.stream(array.getArray()).max();
         return maximum;
     }
 
-    public int findMinimum(CustomArray array) throws CustomException {
-        int minimum = array.getElement(0);
-        for (int i = 1; i < array.length(); i++) {
-            if(minimum > array.getElement(i)) {
-                minimum = array.getElement(i);
-            }
-        }
-
-        logger.info("Array minimum - " + minimum);
-
+    public OptionalInt findMinimum(CustomArray array) throws CustomException {
+        OptionalInt minimum = Arrays.stream(array.getArray()).min();
         return minimum;
     }
 
-    public int findAmountOfPositiveElements(CustomArray array) throws CustomException {
-        int amountOfPositiveElements = 0;
-        for (int element : array.getArray()) {
-            if(element > 0) {
-                amountOfPositiveElements++;
-            }
-        }
-
+    public long findAmountOfPositiveElements(CustomArray array) throws CustomException {
+        long amountOfPositiveElements = Arrays
+                .stream(array.getArray())
+                .filter(x -> x > 0)
+                .count();
         logger.info("Amount of positive elements in array - " + amountOfPositiveElements);
-
-        return  amountOfPositiveElements;
+        return amountOfPositiveElements;
     }
 
-    public int findAmountOfNegativeElements(CustomArray array) throws CustomException {
-        int amountOfNegativeElements = 0;
-        for (int element : array.getArray()) {
-            if(element < 0) {
-                amountOfNegativeElements++;
-            }
-        }
-
+    public long findAmountOfNegativeElements(CustomArray array) throws CustomException {
+        long amountOfNegativeElements = Arrays
+                .stream(array.getArray())
+                .filter(x -> x < 0)
+                .count();
         logger.info("Amount of negative elements in array - " + amountOfNegativeElements);
-
-        return  amountOfNegativeElements;
+        return amountOfNegativeElements;
     }
 }
