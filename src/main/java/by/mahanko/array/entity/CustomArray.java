@@ -21,7 +21,7 @@ public class CustomArray {
     }
 
     public void setArray(int... array) {
-        this.array = array;
+        this.array = array.clone();
     }
 
     public int getElement(int index) throws CustomException {
