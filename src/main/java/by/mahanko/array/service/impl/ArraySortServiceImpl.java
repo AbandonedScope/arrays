@@ -32,50 +32,6 @@ public class ArraySortServiceImpl implements ArraySortService {
         merge(array, leftBound, middle, rightBound);
     }
 
-    private void merge(CustomArray array, int leftBound, int middle, int rightBound) throws CustomException {
-        if (rightBound < leftBound) {
-            logger.log(Level.ERROR, "Lower bound more than upper bound");
-            throw new CustomException();
-        }
-
-        int leftArrayPartLength = middle - leftBound + 1;
-        int rightArrayPartLength = rightBound - middle;
-        int[] leftArrayPart = new int[leftArrayPartLength];
-        int[] rightArrayPart = new int[rightArrayPartLength];
-        for (int i = 0; i < leftArrayPartLength; i++) {
-            leftArrayPart[i] = array.getElement(leftBound + i);
-        }
-
-        for (int i = 0; i < rightArrayPartLength; i++) {
-            rightArrayPart[i] = array.getElement(middle + 1 + i);
-        }
-
-        int i = 0, j = 0, k = leftBound;
-        while (i < leftArrayPartLength && j < rightArrayPartLength) {
-            if (leftArrayPart[i] <= rightArrayPart[j]) {
-                array.setElement(k, leftArrayPart[i]);
-                i++;
-            } else {
-                array.setElement(k, rightArrayPart[j]);
-                j++;
-            }
-
-            k++;
-        }
-
-        while (i < leftArrayPartLength) {
-            array.setElement(k, leftArrayPart[i]);
-            i++;
-            k++;
-        }
-
-        while (j < rightArrayPartLength) {
-            array.setElement(k, rightArrayPart[j]);
-            j++;
-            k++;
-        }
-    }
-
     public void insertionSort(CustomArray array) throws CustomException {
         insertionSort(array, 0, array.length() - 1);
     }
@@ -123,5 +79,49 @@ public class ArraySortServiceImpl implements ArraySortService {
         }
 
         logger.info("Array was sorted by using Bubble Sort");
+    }
+
+    private void merge(CustomArray array, int leftBound, int middle, int rightBound) throws CustomException {
+        if (rightBound < leftBound) {
+            logger.log(Level.ERROR, "Lower bound more than upper bound");
+            throw new CustomException();
+        }
+
+        int leftArrayPartLength = middle - leftBound + 1;
+        int rightArrayPartLength = rightBound - middle;
+        int[] leftArrayPart = new int[leftArrayPartLength];
+        int[] rightArrayPart = new int[rightArrayPartLength];
+        for (int i = 0; i < leftArrayPartLength; i++) {
+            leftArrayPart[i] = array.getElement(leftBound + i);
+        }
+
+        for (int i = 0; i < rightArrayPartLength; i++) {
+            rightArrayPart[i] = array.getElement(middle + 1 + i);
+        }
+
+        int i = 0, j = 0, k = leftBound;
+        while (i < leftArrayPartLength && j < rightArrayPartLength) {
+            if (leftArrayPart[i] <= rightArrayPart[j]) {
+                array.setElement(k, leftArrayPart[i]);
+                i++;
+            } else {
+                array.setElement(k, rightArrayPart[j]);
+                j++;
+            }
+
+            k++;
+        }
+
+        while (i < leftArrayPartLength) {
+            array.setElement(k, leftArrayPart[i]);
+            i++;
+            k++;
+        }
+
+        while (j < rightArrayPartLength) {
+            array.setElement(k, rightArrayPart[j]);
+            j++;
+            k++;
+        }
     }
 }
