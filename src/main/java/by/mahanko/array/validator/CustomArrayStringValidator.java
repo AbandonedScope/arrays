@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class CustomArrayStringValidator {
     private static Logger logger = LogManager.getLogger(CustomArrayStringValidator.class.getName());
-    private final String regularExpression = "((0|-?[1-9][0-9]*)\s+)*(0|-?[1-9][0-9]*)";
+    private final String regularExpression = "\s*((0|-?[1-9][0-9]*)\s+)*(0|-?[1-9][0-9]*)\s*";
 
     public boolean validateString(String stringToValidate) throws CustomException {
         if(stringToValidate == null || stringToValidate.isEmpty()) {
