@@ -1,6 +1,7 @@
 package by.mahanko.array.reader.impl;
 
 import by.mahanko.array.exception.CustomFileDoesntExistException;
+import by.mahanko.array.reader.CustomArrayTxtReader;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,7 +14,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomArrayTxtReaderImpl {
+public class CustomArrayTxtReaderImpl implements CustomArrayTxtReader {
     static Logger logger = LogManager.getLogger(CustomArrayTxtReaderImpl.class.getName());
 
     public List<String> readStringsFromFile(String path) throws CustomFileDoesntExistException {
