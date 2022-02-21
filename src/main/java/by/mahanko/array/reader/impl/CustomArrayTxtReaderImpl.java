@@ -20,7 +20,7 @@ public class CustomArrayTxtReaderImpl implements CustomArrayTxtReader {
     public List<String> readStringsFromFile(String path) throws CustomFileDoesntExistException {
         if (!Files.exists(Paths.get(path))) {
             logger.log(Level.ERROR, "File {} is not found.", path);
-            throw new CustomFileDoesntExistException();
+            throw new CustomFileDoesntExistException("File " + path + " is not found.");
         }
 
         List<String> result = null;
@@ -35,6 +35,7 @@ public class CustomArrayTxtReaderImpl implements CustomArrayTxtReader {
         } catch (IOException e) {
             logger.log(Level.WARN, "File {} is not found.", path);
         }
+        
         return result;
     }
 }
