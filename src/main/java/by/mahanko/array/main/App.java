@@ -1,6 +1,7 @@
 package by.mahanko.array.main;
 
 import by.mahanko.array.entity.CustomArray;
+import by.mahanko.array.parser.impl.CustomStringParserImpl;
 import by.mahanko.array.service.impl.ArrayCalculateServiceImpl;
 import by.mahanko.array.service.impl.ArrayManipulationServiceImpl;
 import by.mahanko.array.service.impl.ArraySearchServiceImpl;
@@ -16,6 +17,10 @@ public class App {
         ArraySearchServiceImpl searcher = new ArraySearchServiceImpl();
         ArrayManipulationServiceImpl manipulator = new ArrayManipulationServiceImpl();
         try {
+            CustomStringParserImpl parser = new CustomStringParserImpl();
+
+            parser.parseValidString(null);
+
             sorter.insertionSort(array);
 
             manipulator.replaceAllElementInRegion(array, 0, 100000, -5);
