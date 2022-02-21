@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="parseValidString method added">
+    <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="some changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrays.iml" beforeDir="false" afterPath="$PROJECT_DIR$/arrays.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/main/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/validator/CustomArrayStringValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/validator/CustomArrayStringValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/mahanko/array/reader/CustomArrayTxtReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/mahanko/array/reader/CustomArrayTxtReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,49 +152,7 @@
       <workItem from="1645262061199" duration="24444000" />
       <workItem from="1645354241097" duration="17525000" />
       <workItem from="1645420414671" duration="1260000" />
-      <workItem from="1645441104954" duration="7681000" />
-    </task>
-    <task id="LOCAL-00042" summary="TestNG dependence added">
-      <created>1645297186379</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1645297186379</updated>
-    </task>
-    <task id="LOCAL-00043" summary="ArrayCalculateServiceImpl tests added">
-      <created>1645303179720</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1645303179720</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Checking if &quot;array&quot; method argument equals null">
-      <created>1645303231699</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1645303231699</updated>
-    </task>
-    <task id="LOCAL-00045" summary="readStringsFromFile method added">
-      <created>1645394352970</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1645394352970</updated>
-    </task>
-    <task id="LOCAL-00046" summary="private fields now final">
-      <created>1645394403990</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1645394403990</updated>
-    </task>
-    <task id="LOCAL-00047" summary="moved to by.mahanko.array.main package">
-      <created>1645394460180</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1645394460180</updated>
+      <workItem from="1645441104954" duration="9168000" />
     </task>
     <task id="LOCAL-00048" summary="Initial create">
       <created>1645394473185</created>
@@ -501,7 +455,49 @@
       <option name="project" value="LOCAL" />
       <updated>1645464983355</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="path fixed">
+      <created>1645465728807</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1645465728807</updated>
+    </task>
+    <task id="LOCAL-00092" summary="parseValidString method implementation added">
+      <created>1645465761306</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1645465761306</updated>
+    </task>
+    <task id="LOCAL-00093" summary="length == 0 check replaced with isEmpty method">
+      <created>1645465806408</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1645465806408</updated>
+    </task>
+    <task id="LOCAL-00094" summary="some changes">
+      <created>1645465830376</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1645465830376</updated>
+    </task>
+    <task id="LOCAL-00095" summary="parser check added">
+      <created>1645465855222</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1645465855222</updated>
+    </task>
+    <task id="LOCAL-00096" summary="some changes">
+      <created>1645465877679</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1645465877679</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,11 +516,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="parseStringCorrectStringToParseTest, parseStringIncorrectStringToParseTest tests added" />
-    <MESSAGE value="TimeBasedTriggeringPolicy interval set to 1" />
-    <MESSAGE value="createCustomArray method added" />
-    <MESSAGE value=".idea, target added" />
-    <MESSAGE value="logs added" />
     <MESSAGE value="Unused import removed" />
     <MESSAGE value=".idea excluded" />
     <MESSAGE value=".idea files added" />
@@ -545,7 +536,12 @@
     <MESSAGE value="readStringsFromFile method added" />
     <MESSAGE value="implements CustomArrayTxtReader" />
     <MESSAGE value="parseValidString method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="parseValidString method added" />
+    <MESSAGE value="path fixed" />
+    <MESSAGE value="parseValidString method implementation added" />
+    <MESSAGE value="length == 0 check replaced with isEmpty method" />
+    <MESSAGE value="parser check added" />
+    <MESSAGE value="some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
