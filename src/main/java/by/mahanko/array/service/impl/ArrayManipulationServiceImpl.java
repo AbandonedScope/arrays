@@ -3,6 +3,7 @@ package by.mahanko.array.service.impl;
 import by.mahanko.array.exception.CustomException;
 import by.mahanko.array.entity.CustomArray;
 import by.mahanko.array.service.ArrayManipulationService;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -12,6 +13,7 @@ public class ArrayManipulationServiceImpl implements ArrayManipulationService {
 
     public void replaceAllNegativeElements(CustomArray array, int valueToReplaceWith) throws CustomException {
         if (array.length() == 0) {
+            logger.log(Level.ERROR, "Array length equals 0");
             throw new CustomException();
         }
 
@@ -27,6 +29,7 @@ public class ArrayManipulationServiceImpl implements ArrayManipulationService {
 
     public void replaceAllElementInRegion(CustomArray array, int lowerBound, int uppedBound, int valueToReplaceWith) throws CustomException {
         if (array.length() == 0 || lowerBound > uppedBound) {
+            logger.log(Level.ERROR, "Array length equals 0 or lower bound more than upper bound");
             throw new CustomException();
         }
 
