@@ -22,7 +22,7 @@ public class CustomStringParserImpl implements CustomStringParser {
                     .toArray();
         } else {
             logger.log(Level.ERROR, "Invalid string : " + stringToParse);
-            throw new CustomException("");
+            throw new CustomException("Invalid string : " + stringToParse);
         }
 
         return result;
