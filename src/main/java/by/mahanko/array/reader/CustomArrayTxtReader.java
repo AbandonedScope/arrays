@@ -32,8 +32,7 @@ public class CustomArrayTxtReader {
             }
 
         } catch (IOException e) {
-            logger.log(Level.ERROR, "File {} is not found.", path);
-            e.printStackTrace();
+            logger.log(Level.WARN, "File {} is not found.", path);
         }
         return result;
     }
