@@ -55,39 +55,29 @@ public class ArrayCalculateServiceImplTest {
 
     @Test
     public void countAverageBaseArrayTest() throws CustomException {
-        double actual = service.countAverage(entityBaseArray);
+        double actual = service.countAverage(entityBaseArray).getAsDouble();
         double expected = 3d;
         Assert.assertEquals(actual, expected);
     }
 
     @Test
     public void countAverageEqualPositiveNumbersTest() throws CustomException {
-        double actual = service.countAverage(entityEqualPositiveNumbersArray);
+        double actual = service.countAverage(entityEqualPositiveNumbersArray).getAsDouble();
         double expected = 2d;
         Assert.assertEquals(actual, expected);
     }
 
     @Test
     public void countAverageEqualNegativeNumbersTest() throws CustomException {
-        double actual = service.countAverage(entityEqualNegativeNumbersArray);
+        double actual = service.countAverage(entityEqualNegativeNumbersArray).getAsDouble();
         double expected = -2d;
         Assert.assertEquals(actual, expected);
     }
 
     @Test
     public void countAverageArrayOfZerosTest() throws CustomException {
-        double actual = service.countAverage(entityArrayOfZeros);
+        double actual = service.countAverage(entityArrayOfZeros).getAsDouble();
         double expected = 0d;
         Assert.assertEquals(actual, expected);
-    }
-
-    @Test(expectedExceptions = CustomException.class)
-    public void countAverageEmptyArrayTest() throws CustomException {
-        service.countAverage(entityEmptyArray);
-    }
-
-    @Test(expectedExceptions = CustomException.class)
-    public void countAverageNullArrayTest() throws CustomException {
-        service.countAverage(null);
     }
 }
