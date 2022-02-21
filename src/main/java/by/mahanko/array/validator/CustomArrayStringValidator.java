@@ -12,7 +12,7 @@ public class CustomArrayStringValidator {
     private final String regularExpression = "((0|-?[1-9][0-9]*)\s+)*(0|-?[1-9][0-9]*)";
 
     public boolean validateString(String stringToValidate) throws CustomException {
-        if(stringToValidate == null || stringToValidate.length() == 0) {
+        if(stringToValidate == null || stringToValidate.isEmpty()) {
             logger.log(Level.ERROR, "Empty or null string");
             throw new CustomException();
         }
