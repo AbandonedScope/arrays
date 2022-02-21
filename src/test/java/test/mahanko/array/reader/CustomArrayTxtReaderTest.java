@@ -10,7 +10,7 @@ import java.util.List;
 public class CustomArrayTxtReaderTest {
     private CustomArrayTxtReaderImpl reader = new CustomArrayTxtReaderImpl();
     private final String pathToNonexistentFile = "non-existent-file.txt";
-    private final String pathToExistFile = "D:/arrays/src/test/resources/customarraytxtreadertestfile.txt";
+    private final String pathToExistFile = "src/test/resources/customarraytxtreadertestfile.txt";
 
     @Test(expectedExceptions = CustomFileDoesntExistException.class)
     public void readStringsFromFileNonexistentFileTest() throws CustomFileDoesntExistException {
