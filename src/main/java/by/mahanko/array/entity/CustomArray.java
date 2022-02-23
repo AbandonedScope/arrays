@@ -9,7 +9,7 @@ public class CustomArray {
     }
 
     public CustomArray(int... array) {
-        this.array = array;
+        this.array = array.clone();
     }
 
     public int length() {

@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="extra tests added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySortServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySortServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last.edited.regexp" value="-1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Download/Taskmgr" />
+    <property name="last_opened_file_path" value="C:/glassfish4/docs/firstcup/example/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -166,6 +166,8 @@
       <workItem from="1645354241097" duration="17525000" />
       <workItem from="1645420414671" duration="1260000" />
       <workItem from="1645441104954" duration="14367000" />
+      <workItem from="1645559430068" duration="112000" />
+      <workItem from="1645628056750" duration="901000" />
     </task>
     <task id="LOCAL-00062" summary="exception throwing added">
       <created>1645399724363</created>
