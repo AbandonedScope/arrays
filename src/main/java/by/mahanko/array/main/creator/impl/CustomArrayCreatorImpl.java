@@ -1,7 +1,7 @@
-package by.mahanko.array.creator.impl;
+package by.mahanko.array.main.creator.impl;
 
 import by.mahanko.array.entity.CustomArray;
-import by.mahanko.array.creator.CustomArrayCreator;
+import by.mahanko.array.main.creator.CustomArrayCreator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

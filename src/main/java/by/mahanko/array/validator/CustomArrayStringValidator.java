@@ -1,22 +1,18 @@
 package by.mahanko.array.validator;
-
-import by.mahanko.array.exception.CustomException;
-import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.regex.Pattern;
 
-public class CustomArrayStringValidator {
+public class CustomArrayStringValidator { // FIXME: 23.02.2022 Singleton pattern
     private static Logger logger = LogManager.getLogger(CustomArrayStringValidator.class.getName());
-    private final String regularExpression = "\s*((0|-?[1-9][0-9]*)\s+)*(0|-?[1-9][0-9]*)\s*";
+    private static final String INTS_SEPARATED_BY_SPACE = "\s*((0|-?[1-9][0-9]*)\s+)*(0|-?[1-9][0-9]*)\s*"; // FIXME: 23.02.2022 \d ect.
 
-    public boolean validateString(String stringToValidate) throws CustomException {
-        if(stringToValidate == null || stringToValidate.isEmpty()) {
-            logger.log(Level.ERROR, "Empty or null string");
-            throw new CustomException();
+    public boolean validateString(String stringOfIntegers) {
+        if(stringOfIntegers == null || stringOfIntegers.isEmpty()) {
+            return false;
         }
-        boolean answer = Pattern.matches(regularExpression, stringToValidate);
-        return answer;
+
+        return Pattern.matches(INTS_SEPARATED_BY_SPACE, stringOfIntegers);
     }
 }

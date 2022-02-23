@@ -6,9 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="some changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/creator/impl/CustomArrayCreatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/creator/impl/CustomArrayCreatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/creator/CustomArrayCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/main/creator/CustomArrayCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/creator/impl/CustomArrayCreatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/main/creator/impl/CustomArrayCreatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/exception/CustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/exception/CustomException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/exception/CustomFileDoesntExistException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/CustomArrayTxtReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/CustomArrayTxtReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/impl/CustomArrayTxtReaderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/impl/CustomArrayTxtReaderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayCalculateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayCalculateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayManipulationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayManipulationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySortServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySortServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/validator/CustomArrayStringValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/validator/CustomArrayStringValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/mahanko/array/reader/CustomArrayTxtReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/mahanko/array/reader/CustomArrayTxtReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/mahanko/array/validator/CustomArrayStringValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/mahanko/array/validator/CustomArrayStringValidatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +68,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheBeginAndEndOfTheStringTest">
+  <component name="RunManager" selected="TestNG.test.mahanko.array">
     <configuration name="CustomArrayStringValidatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="arrays" />
       <extension name="coverage">
@@ -68,24 +80,6 @@
       <option name="PACKAGE_NAME" value="test.mahanko.array.validator" />
       <option name="MAIN_CLASS_NAME" value="test.mahanko.array.validator.CustomArrayStringValidatorTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomArrayStringValidatorTest.validateBlankStringTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="arrays" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.mahanko.array.validator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.mahanko.array.validator" />
-      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.validator.CustomArrayStringValidatorTest" />
-      <option name="METHOD_NAME" value="validateBlankStringTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -146,13 +140,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test.mahanko.array" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="arrays" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.mahanko.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.mahanko.array" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.test.mahanko.array" />
         <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheBeginAndEndOfTheStringTest" />
         <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheEndOfTheStringTest" />
         <item itemvalue="TestNG.CustomArrayStringValidatorTest" />
         <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheBeginOfTheStringTest" />
-        <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateBlankStringTest" />
       </list>
     </recent_temporary>
   </component>
@@ -170,14 +180,7 @@
       <workItem from="1645420414671" duration="1260000" />
       <workItem from="1645441104954" duration="14367000" />
       <workItem from="1645559430068" duration="112000" />
-      <workItem from="1645628056750" duration="1803000" />
-    </task>
-    <task id="LOCAL-00063" summary="logging added">
-      <created>1645399750426</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1645399750426</updated>
+      <workItem from="1645628056750" duration="7375000" />
     </task>
     <task id="LOCAL-00064" summary="parseStringCorrectStringToParseTest, parseStringIncorrectStringToParseTest tests added">
       <created>1645399792687</created>
@@ -515,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645629028638</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="some changes">
+      <created>1645630093535</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1645630093535</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

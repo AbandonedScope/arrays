@@ -11,10 +11,12 @@ import org.apache.logging.log4j.LogManager;
 public class ArraySortServiceImpl implements ArraySortService {
     static Logger logger = LogManager.getLogger(ArraySortServiceImpl.class.getName());
 
+    @Override
     public void mergeSort(CustomArray array) throws CustomException {
         mergeSort(array, 0, array.length() - 1);
     }
 
+    @Override
     public void mergeSort(CustomArray array, int leftBound, int rightBound) throws CustomException {
         if (array.length() == 0 || leftBound > rightBound) {
             throw new CustomException();
@@ -32,10 +34,12 @@ public class ArraySortServiceImpl implements ArraySortService {
         merge(array, leftBound, middle, rightBound);
     }
 
+    @Override
     public void insertionSort(CustomArray array) throws CustomException {
         insertionSort(array, 0, array.length() - 1);
     }
 
+    @Override
     public void insertionSort(CustomArray array, int leftBound, int rightBound) throws CustomException {
         if (rightBound < leftBound || array.length() == 0) {
             logger.log(Level.ERROR, "Array length equals 0 or left bound more than right bound");
@@ -58,10 +62,12 @@ public class ArraySortServiceImpl implements ArraySortService {
         logger.info("Array was sorted by using Insertion Sort");
     }
 
+    @Override
     public void bubbleSort(CustomArray array) throws CustomException {
         bubbleSort(array, 0, array.length() - 1);
     }
 
+    @Override
     public void bubbleSort(CustomArray array, int leftBound, int rightBound) throws CustomException {
         if (array.length() == 0 || rightBound < leftBound) {
             logger.log(Level.ERROR, "Array length equals 0 or left bound more than right bound");

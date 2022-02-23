@@ -13,6 +13,7 @@ import java.util.OptionalDouble;
 public class ArrayCalculateServiceImpl implements ArrayCalculateService {
     static Logger logger = LogManager.getLogger(ArrayCalculateServiceImpl.class.getName());
 
+    @Override
     public int countElementsSum(CustomArray array) throws CustomException {
         if (array == null || array.length() == 0) {
             logger.log(Level.ERROR, "Array equals null or array length equals 0");
@@ -24,6 +25,7 @@ public class ArrayCalculateServiceImpl implements ArrayCalculateService {
         return sum;
     }
 
+    @Override
     public OptionalDouble countAverage(CustomArray array) {
         OptionalDouble average = Arrays.stream(array.getArray()).average();
         logger.info("Array's average - " + average);

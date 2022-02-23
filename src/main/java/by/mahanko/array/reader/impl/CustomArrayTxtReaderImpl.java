@@ -1,6 +1,6 @@
 package by.mahanko.array.reader.impl;
 
-import by.mahanko.array.exception.CustomFileDoesntExistException;
+import by.mahanko.array.exception.CustomException;
 import by.mahanko.array.reader.CustomArrayTxtReader;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -18,16 +18,15 @@ public class CustomArrayTxtReaderImpl implements CustomArrayTxtReader {
     static Logger logger = LogManager.getLogger(CustomArrayTxtReaderImpl.class.getName());
 
     @Override
-    public List<String> readStringsFromFile(String path) throws CustomFileDoesntExistException {
+    public List<String> readStringsFromFile(String path) throws CustomException { // FIXME: 23.02.2022 If file readonly throw exception
         if (!Files.exists(Paths.get(path))) {
             logger.log(Level.ERROR, "File {} is not found.", path);
-            throw new CustomFileDoesntExistException("File " + path + " is not found.");
+            throw new CustomException("File " + path + " is not found.");
         }
 
-        List<String> result = null;
+        List<String> result = new ArrayList<String>();
         try (FileReader fileReader = new FileReader(path);
              BufferedReader bufferedReader = new BufferedReader(fileReader)) {
-            result = new ArrayList<String>();
             String lineOfFile;
             while ((lineOfFile = bufferedReader.readLine()) != null) {
                 result.add(lineOfFile);

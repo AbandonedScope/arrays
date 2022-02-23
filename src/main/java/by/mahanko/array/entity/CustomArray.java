@@ -60,7 +60,7 @@ public class CustomArray {
             return false;
         }
 
-        if (obj instanceof CustomArray arrayToEqualTo) {
+        if (obj instanceof CustomArray arrayToEqualTo) { // FIXME: 23.02.2022 obj.getClass() != this.getClass() уже есть
             if (arrayToEqualTo.array == null || this.array == null) {
                 return arrayToEqualTo.array == null && this.array == null;
             }

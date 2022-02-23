@@ -13,6 +13,7 @@ import java.util.Arrays;
 public class ArrayManipulationServiceImpl implements ArrayManipulationService {
     static Logger logger = LogManager.getLogger(ArrayManipulationServiceImpl.class.getName());
 
+    @Override
     public void replaceAllNegativeElements(CustomArray array, int valueToReplaceWith) throws CustomException {
         if (array.length() == 0) {
             logger.log(Level.ERROR, "Array length equals 0");
@@ -27,6 +28,7 @@ public class ArrayManipulationServiceImpl implements ArrayManipulationService {
         logger.info("Array negative elements were replaced with - " + valueToReplaceWith);
     }
 
+    @Override
     public void replaceAllElementInRegion(CustomArray array, int lowerBound, int uppedBound, int valueToReplaceWith) throws CustomException {
         if (array.length() == 0 || lowerBound > uppedBound) {
             logger.log(Level.ERROR, "Array length equals 0 or lower bound more than upper bound");

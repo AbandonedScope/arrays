@@ -13,16 +13,19 @@ import java.util.OptionalInt;
 public class ArraySearchServiceImpl implements ArraySearchService {
     static Logger logger = LogManager.getLogger(ArraySearchServiceImpl.class.getName());
 
+    @Override
     public OptionalInt findMaximum(CustomArray array) {
         OptionalInt maximum = Arrays.stream(array.getArray()).max();
         return maximum;
     }
 
+    @Override
     public OptionalInt findMinimum(CustomArray array) throws CustomException {
         OptionalInt minimum = Arrays.stream(array.getArray()).min();
         return minimum;
     }
 
+    @Override
     public long findAmountOfPositiveElements(CustomArray array) throws CustomException {
         long amountOfPositiveElements = Arrays
                 .stream(array.getArray())
@@ -32,6 +35,7 @@ public class ArraySearchServiceImpl implements ArraySearchService {
         return amountOfPositiveElements;
     }
 
+    @Override
     public long findAmountOfNegativeElements(CustomArray array) throws CustomException {
         long amountOfNegativeElements = Arrays
                 .stream(array.getArray())

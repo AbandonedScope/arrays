@@ -20,77 +20,78 @@ public class CustomArrayStringValidatorTest {
     private final String emptyString = "";
 
     @Test
-    public void validatePositiveElementsStringTest()  throws CustomException {
+    public void validatePositiveElementsStringTest() {
         boolean actual = validator.validateString(positiveElementsString);
         boolean expected = true;
         Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void validateNegativeElementsStringTest()  throws CustomException {
+    public void validateNegativeElementsStringTest() {
         boolean actual = validator.validateString(negativeElementsString);
         boolean expected = true;
         Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void validateMixedStringTest()  throws CustomException {
+    public void validateMixedStringTest() {
         boolean actual = validator.validateString(mixedString);
         boolean expected = true;
         Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void validatePositiveElementStartingWithZeroStringTest()  throws CustomException {
+    public void validatePositiveElementStartingWithZeroStringTest() {
         boolean actual = validator.validateString(positiveElementStartingWithZeroString);
         boolean expected = false;
         Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void validateNegativeElementStartingWithZeroStringTest()  throws CustomException {
+    public void validateNegativeElementStartingWithZeroStringTest() {
         boolean actual = validator.validateString(negativeElementStartingWithZeroString);
         boolean expected = false;
         Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void validateSeveralSpacesBetweenElementsStringTest()  throws CustomException {
+    public void validateSeveralSpacesBetweenElementsStringTest() {
         boolean actual = validator.validateString(severalSpacesBetweenElementsString);
         boolean expected = true;
         Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void validateSpaceAtTheEndOfTheStringTest()  throws CustomException {
+    public void validateSpaceAtTheEndOfTheStringTest() {
         boolean actual = validator.validateString(spaceAtTheEndOfTheString);
         boolean expected = true;
         Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void validateSpaceAtTheBeginOfTheStringTest()  throws CustomException {
+    public void validateSpaceAtTheBeginOfTheStringTest() {
         boolean actual = validator.validateString(spaceAtTheBeginOfTheString);
         boolean expected = true;
         Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void validateSpaceAtTheBeginAndEndOfTheStringTest()  throws CustomException {
+    public void validateSpaceAtTheBeginAndEndOfTheStringTest() {
         boolean actual = validator.validateString(spaceAtTheBeginAndEndOfTheString);
         boolean expected = true;
         Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void validateBlankStringTest()  throws CustomException {
+    public void validateBlankStringTest() {
         boolean actual = validator.validateString(blankString);
         boolean expected = false;
         Assert.assertEquals(actual, expected);
     }
 
-    @Test(expectedExceptions = CustomException.class)
-    public void validateEmptyStringTest()  throws CustomException {
-        validator.validateString(emptyString);
+    @Test
+    public void validateEmptyStringTest() {
+        boolean actual = validator.validateString(emptyString);
+
     }
 }
