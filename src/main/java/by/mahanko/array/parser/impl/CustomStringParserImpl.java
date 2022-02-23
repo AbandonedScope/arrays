@@ -13,6 +13,7 @@ import java.util.stream.IntStream;
 public class CustomStringParserImpl implements CustomStringParser {
     private static Logger logger = LogManager.getLogger(CustomStringParserImpl.class.getName());
 
+    @Override
     public int[] parseString(String stringToParse) throws CustomException {
         int[] result = null;
         CustomArrayStringValidator validator = new CustomArrayStringValidator();
@@ -28,6 +29,7 @@ public class CustomStringParserImpl implements CustomStringParser {
         return result;
     }
 
+    @Override
     public int[] parseValidString(String stringToParse) throws CustomException {
         int[] result = null;
         try {

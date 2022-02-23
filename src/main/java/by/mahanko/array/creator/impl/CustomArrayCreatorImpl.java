@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 public class CustomArrayCreatorImpl implements CustomArrayCreator{
     private static Logger logger = LogManager.getLogger(CustomArrayCreatorImpl.class.getName());
 
+    @Override
     public CustomArray createCustomArray(int[] array) {
         CustomArray customArray = new CustomArray(array);
         return customArray;

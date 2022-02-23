@@ -17,6 +17,7 @@ import java.util.List;
 public class CustomArrayTxtReaderImpl implements CustomArrayTxtReader {
     static Logger logger = LogManager.getLogger(CustomArrayTxtReaderImpl.class.getName());
 
+    @Override
     public List<String> readStringsFromFile(String path) throws CustomFileDoesntExistException {
         if (!Files.exists(Paths.get(path))) {
             logger.log(Level.ERROR, "File {} is not found.", path);

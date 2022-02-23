@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="extra tests added">
+    <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="some changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/creator/impl/CustomArrayCreatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/creator/impl/CustomArrayCreatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/impl/CustomArrayTxtReaderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/impl/CustomArrayTxtReaderImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,7 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
@@ -167,14 +170,7 @@
       <workItem from="1645420414671" duration="1260000" />
       <workItem from="1645441104954" duration="14367000" />
       <workItem from="1645559430068" duration="112000" />
-      <workItem from="1645628056750" duration="901000" />
-    </task>
-    <task id="LOCAL-00062" summary="exception throwing added">
-      <created>1645399724363</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1645399724363</updated>
+      <workItem from="1645628056750" duration="1803000" />
     </task>
     <task id="LOCAL-00063" summary="logging added">
       <created>1645399750426</created>
@@ -512,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645472364147</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="some changes">
+      <created>1645629028637</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1645629028638</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,10 +556,10 @@
     <MESSAGE value="odd tests removed" />
     <MESSAGE value="exceptions messages added" />
     <MESSAGE value="exception message added" />
-    <MESSAGE value="some changes" />
     <MESSAGE value="regex added" />
     <MESSAGE value="extra tests added" />
-    <option name="LAST_COMMIT_MESSAGE" value="extra tests added" />
+    <MESSAGE value="some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
