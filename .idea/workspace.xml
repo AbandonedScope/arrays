@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="assertEquals changed to assertTrue nd assertFalse">
+    <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="equals method changed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/exception/CustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/exception/CustomException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/impl/CustomArrayTxtReaderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/impl/CustomArrayTxtReaderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/validator/CustomArrayStringValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/validator/CustomArrayStringValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +75,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CustomArrayStringValidatorTest.validatePositiveElementStartingWithZeroStringTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="arrays" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.mahanko.array.validator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.mahanko.array.validator" />
+      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.validator.CustomArrayStringValidatorTest" />
+      <option name="METHOD_NAME" value="validatePositiveElementStartingWithZeroStringTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustomArrayStringValidatorTest.validateSpaceAtTheBeginAndEndOfTheStringTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="arrays" />
       <extension name="coverage">
@@ -83,24 +104,6 @@
       <option name="PACKAGE_NAME" value="test.mahanko.array.validator" />
       <option name="MAIN_CLASS_NAME" value="test.mahanko.array.validator.CustomArrayStringValidatorTest" />
       <option name="METHOD_NAME" value="validateSpaceAtTheBeginAndEndOfTheStringTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomArrayStringValidatorTest.validateSpaceAtTheBeginOfTheStringTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="arrays" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.mahanko.array.validator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.mahanko.array.validator" />
-      <option name="MAIN_CLASS_NAME" value="test.mahanko.array.validator.CustomArrayStringValidatorTest" />
-      <option name="METHOD_NAME" value="validateSpaceAtTheBeginOfTheStringTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -145,10 +148,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.CustomArrayStringValidatorTest" />
+        <item itemvalue="TestNG.CustomArrayStringValidatorTest.validatePositiveElementStartingWithZeroStringTest" />
         <item itemvalue="TestNG.test.mahanko.array" />
         <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheBeginAndEndOfTheStringTest" />
         <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheEndOfTheStringTest" />
-        <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheBeginOfTheStringTest" />
       </list>
     </recent_temporary>
   </component>
@@ -166,14 +169,7 @@
       <workItem from="1645420414671" duration="1260000" />
       <workItem from="1645441104954" duration="14367000" />
       <workItem from="1645559430068" duration="112000" />
-      <workItem from="1645628056750" duration="7671000" />
-    </task>
-    <task id="LOCAL-00066" summary="createCustomArray method added">
-      <created>1645399989902</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1645399989902</updated>
+      <workItem from="1645628056750" duration="8368000" />
     </task>
     <task id="LOCAL-00067" summary=".idea, target added">
       <created>1645400293620</created>
@@ -511,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645637556879</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="equals method changed">
+      <created>1645637668206</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1645637668206</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +533,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Initial create, parseString method added" />
     <MESSAGE value="renamed" />
     <MESSAGE value="moved to impl package" />
     <MESSAGE value="initial create" />
@@ -555,7 +557,8 @@
     <MESSAGE value="extra tests added" />
     <MESSAGE value="some changes" />
     <MESSAGE value="assertEquals changed to assertTrue nd assertFalse" />
-    <option name="LAST_COMMIT_MESSAGE" value="assertEquals changed to assertTrue nd assertFalse" />
+    <MESSAGE value="equals method changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="equals method changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

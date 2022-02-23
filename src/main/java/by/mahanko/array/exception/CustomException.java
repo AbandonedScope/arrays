@@ -2,7 +2,7 @@ package by.mahanko.array.exception;
 
 import java.lang.Exception;
 
-public class CustomException extends Exception{ // FIXME: 23.02.2022 more constructors
+public class CustomException extends Exception {
     public CustomException() {
         super();
     }

@@ -24,6 +24,11 @@ public class CustomArrayTxtReaderImpl implements CustomArrayTxtReader {
             throw new CustomException("File " + path + " is not found.");
         }
 
+        if (!Files.isReadable(Paths.get(path))) {
+            logger.log(Level.ERROR, "File {} is not readable.", path);
+            throw new CustomException("File " + path + " is not readable.");
+        }
+
         List<String> result = new ArrayList<String>();
         try (FileReader fileReader = new FileReader(path);
              BufferedReader bufferedReader = new BufferedReader(fileReader)) {
@@ -35,7 +40,7 @@ public class CustomArrayTxtReaderImpl implements CustomArrayTxtReader {
         } catch (IOException e) {
             logger.log(Level.WARN, "File {} is not found.", path);
         }
-        
+
         return result;
     }
 }

@@ -34,12 +34,12 @@ public class CustomStringParserImpl implements CustomStringParser {
     public int[] parseValidString(String stringToParse) throws CustomException {
         int[] result = null;
         try {
-            result = Arrays.stream(stringToParse.split(SPLITTER))// FIXME: 23.02.2022 in constant
+            result = Arrays.stream(stringToParse.split(SPLITTER))
                     .flatMapToInt(num -> IntStream.of(Integer.parseInt(num)))
                     .toArray();
         } catch (Exception exception) {
-            logger.log(Level.ERROR, "Invalid string : " + stringToParse);
-            throw new CustomException(exception.getMessage());
+            logger.log(Level.ERROR, "Invalid string : " + stringToParse, exception);
+            throw new CustomException(exception);
         }
 
         return result;
