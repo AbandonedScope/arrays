@@ -60,22 +60,19 @@ public class CustomArray {
             return false;
         }
 
-        if (obj instanceof CustomArray arrayToEqualTo) { // FIXME: 23.02.2022 obj.getClass() != this.getClass() уже есть
-            if (arrayToEqualTo.array == null || this.array == null) {
-                return arrayToEqualTo.array == null && this.array == null;
-            }
+        CustomArray arrayToEqualTo = (CustomArray) obj;
+        if (arrayToEqualTo.array == null || this.array == null) {
+            return arrayToEqualTo.array == null && this.array == null;
+        }
 
-            if (length() != arrayToEqualTo.length()) {
+        if (length() != arrayToEqualTo.length()) {
+            return false;
+        }
+
+        for (int i = 0; i < length(); i++) {
+            if (this.array[i] != arrayToEqualTo.array[i]) {
                 return false;
             }
-
-            for (int i = 0; i < length(); i++) {
-                if (this.array[i] != arrayToEqualTo.array[i]) {
-                    return false;
-                }
-            }
-        } else {
-            return false;
         }
 
         return true;

@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="some changes">
+    <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="assertEquals changed to assertTrue nd assertFalse">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/creator/CustomArrayCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/main/creator/CustomArrayCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/creator/impl/CustomArrayCreatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/main/creator/impl/CustomArrayCreatorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/exception/CustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/exception/CustomException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/exception/CustomFileDoesntExistException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/CustomArrayTxtReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/CustomArrayTxtReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/impl/CustomArrayTxtReaderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/impl/CustomArrayTxtReaderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayCalculateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayCalculateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayManipulationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayManipulationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySearchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySortServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySortServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/validator/CustomArrayStringValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/validator/CustomArrayStringValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/mahanko/array/reader/CustomArrayTxtReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/mahanko/array/reader/CustomArrayTxtReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/mahanko/array/validator/CustomArrayStringValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/mahanko/array/validator/CustomArrayStringValidatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +54,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="TestNG.test.mahanko.array">
+  <component name="RunManager" selected="TestNG.CustomArrayStringValidatorTest">
     <configuration name="CustomArrayStringValidatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="arrays" />
       <extension name="coverage">
@@ -158,10 +144,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CustomArrayStringValidatorTest" />
         <item itemvalue="TestNG.test.mahanko.array" />
         <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheBeginAndEndOfTheStringTest" />
         <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheEndOfTheStringTest" />
-        <item itemvalue="TestNG.CustomArrayStringValidatorTest" />
         <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateSpaceAtTheBeginOfTheStringTest" />
       </list>
     </recent_temporary>
@@ -180,21 +166,7 @@
       <workItem from="1645420414671" duration="1260000" />
       <workItem from="1645441104954" duration="14367000" />
       <workItem from="1645559430068" duration="112000" />
-      <workItem from="1645628056750" duration="7375000" />
-    </task>
-    <task id="LOCAL-00064" summary="parseStringCorrectStringToParseTest, parseStringIncorrectStringToParseTest tests added">
-      <created>1645399792687</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1645399792687</updated>
-    </task>
-    <task id="LOCAL-00065" summary="TimeBasedTriggeringPolicy interval set to 1">
-      <created>1645399840997</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1645399840997</updated>
+      <workItem from="1645628056750" duration="7671000" />
     </task>
     <task id="LOCAL-00066" summary="createCustomArray method added">
       <created>1645399989902</created>
@@ -525,7 +497,21 @@
       <option name="project" value="LOCAL" />
       <updated>1645630093535</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="some changes">
+      <created>1645637364352</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1645637364352</updated>
+    </task>
+    <task id="LOCAL-00114" summary="assertEquals changed to assertTrue nd assertFalse">
+      <created>1645637556879</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1645637556879</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +530,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="something" />
     <MESSAGE value="Initial create, parseString method added" />
     <MESSAGE value="renamed" />
     <MESSAGE value="moved to impl package" />
@@ -569,7 +554,8 @@
     <MESSAGE value="regex added" />
     <MESSAGE value="extra tests added" />
     <MESSAGE value="some changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
+    <MESSAGE value="assertEquals changed to assertTrue nd assertFalse" />
+    <option name="LAST_COMMIT_MESSAGE" value="assertEquals changed to assertTrue nd assertFalse" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
