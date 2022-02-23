@@ -22,76 +22,66 @@ public class CustomArrayStringValidatorTest {
     @Test
     public void validatePositiveElementsStringTest() {
         boolean actual = validator.validateString(positiveElementsString);
-        boolean expected = true;
-        Assert.assertEquals(actual, expected);
+        Assert.assertTrue(actual);
     }
 
     @Test
     public void validateNegativeElementsStringTest() {
         boolean actual = validator.validateString(negativeElementsString);
-        boolean expected = true;
-        Assert.assertEquals(actual, expected);
+        Assert.assertTrue(actual);
     }
 
     @Test
     public void validateMixedStringTest() {
         boolean actual = validator.validateString(mixedString);
-        boolean expected = true;
-        Assert.assertEquals(actual, expected);
+        Assert.assertTrue(actual);
     }
 
     @Test
     public void validatePositiveElementStartingWithZeroStringTest() {
         boolean actual = validator.validateString(positiveElementStartingWithZeroString);
-        boolean expected = false;
-        Assert.assertEquals(actual, expected);
+        Assert.assertFalse(actual);
     }
 
     @Test
     public void validateNegativeElementStartingWithZeroStringTest() {
         boolean actual = validator.validateString(negativeElementStartingWithZeroString);
-        boolean expected = false;
-        Assert.assertEquals(actual, expected);
+        Assert.assertFalse(actual);
     }
 
     @Test
     public void validateSeveralSpacesBetweenElementsStringTest() {
         boolean actual = validator.validateString(severalSpacesBetweenElementsString);
-        boolean expected = true;
-        Assert.assertEquals(actual, expected);
+        Assert.assertTrue(actual);
     }
 
     @Test
     public void validateSpaceAtTheEndOfTheStringTest() {
         boolean actual = validator.validateString(spaceAtTheEndOfTheString);
-        boolean expected = true;
-        Assert.assertEquals(actual, expected);
+        Assert.assertTrue(actual);
     }
 
     @Test
     public void validateSpaceAtTheBeginOfTheStringTest() {
         boolean actual = validator.validateString(spaceAtTheBeginOfTheString);
-        boolean expected = true;
-        Assert.assertEquals(actual, expected);
+        Assert.assertTrue(actual);
     }
 
     @Test
     public void validateSpaceAtTheBeginAndEndOfTheStringTest() {
         boolean actual = validator.validateString(spaceAtTheBeginAndEndOfTheString);
-        boolean expected = true;
-        Assert.assertEquals(actual, expected);
+        Assert.assertTrue(actual);
     }
 
     @Test
     public void validateBlankStringTest() {
         boolean actual = validator.validateString(blankString);
-        boolean expected = false;
-        Assert.assertEquals(actual, expected);
+        Assert.assertFalse(actual);
     }
 
     @Test
     public void validateEmptyStringTest() {
         boolean actual = validator.validateString(emptyString);
-
+        Assert.assertFalse(actual);
     }
 }
