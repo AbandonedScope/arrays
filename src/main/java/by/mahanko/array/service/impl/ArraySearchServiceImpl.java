@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.OptionalInt;
 
 public class ArraySearchServiceImpl implements ArraySearchService {
-    static Logger logger = LogManager.getLogger(ArraySearchServiceImpl.class.getName());
+    static Logger logger = LogManager.getLogger(ArraySearchServiceImpl.class);
 
     @Override
     public OptionalInt findMaximum(CustomArray array) {

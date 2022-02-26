@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.OptionalDouble;
 
 public class ArrayCalculateServiceImpl implements ArrayCalculateService {
-    static Logger logger = LogManager.getLogger(ArrayCalculateServiceImpl.class.getName());
+    static Logger logger = LogManager.getLogger(ArrayCalculateServiceImpl.class);
 
     @Override
     public int countElementsSum(CustomArray array) throws CustomException {

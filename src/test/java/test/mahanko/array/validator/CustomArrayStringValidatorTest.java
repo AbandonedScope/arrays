@@ -76,12 +76,12 @@ public class CustomArrayStringValidatorTest {
     @Test
     public void validateBlankStringTest() {
         boolean actual = validator.validateString(blankString);
-        Assert.assertFalse(actual);
+        Assert.assertTrue(actual);
     }
 
     @Test
     public void validateEmptyStringTest() {
         boolean actual = validator.validateString(emptyString);
-        Assert.assertFalse(actual);
+        Assert.assertTrue(actual);
     }
 }

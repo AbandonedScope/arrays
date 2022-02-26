@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 public class ArraySortServiceImpl implements ArraySortService {
-    static Logger logger = LogManager.getLogger(ArraySortServiceImpl.class.getName());
+    static Logger logger = LogManager.getLogger(ArraySortServiceImpl.class);
 
     @Override
     public void mergeSort(CustomArray array) throws CustomException {

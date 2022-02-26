@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class CustomStringParserImpl implements CustomStringParser {
-    private static Logger logger = LogManager.getLogger(CustomStringParserImpl.class.getName());
+    private static Logger logger = LogManager.getLogger(CustomStringParserImpl.class);
     private static final String SPLITTER = "\s+";
 
     @Override
@@ -19,9 +19,14 @@ public class CustomStringParserImpl implements CustomStringParser {
         int[] result = null;
         CustomArrayStringValidator validator = new CustomArrayStringValidator();
         if (validator.validateString(stringToParse)) {
-            result = Arrays.stream(stringToParse.split(SPLITTER))
-                    .flatMapToInt(num -> IntStream.of(Integer.parseInt(num)))
-                    .toArray();
+            if(!stringToParse.isBlank()) {
+                result = Arrays.stream(stringToParse.split(SPLITTER))
+                        .flatMapToInt(num -> IntStream.of(Integer.parseInt(num)))
+                        .toArray();
+            } else {
+                result = new int[0];
+            }
+
         } else {
             logger.log(Level.ERROR, "Invalid string : " + stringToParse);
             throw new CustomException("Invalid string : " + stringToParse);
@@ -34,9 +39,14 @@ public class CustomStringParserImpl implements CustomStringParser {
     public int[] parseValidString(String stringToParse) throws CustomException {
         int[] result = null;
         try {
-            result = Arrays.stream(stringToParse.split(SPLITTER))
-                    .flatMapToInt(num -> IntStream.of(Integer.parseInt(num)))
-                    .toArray();
+            if(!stringToParse.isBlank()) {
+                result = Arrays.stream(stringToParse.split(SPLITTER))
+                        .flatMapToInt(num -> IntStream.of(Integer.parseInt(num)))
+                        .toArray();
+            } else {
+                result = new int[0];
+            }
+
         } catch (Exception exception) {
             logger.log(Level.ERROR, "Invalid string : " + stringToParse, exception);
             throw new CustomException(exception);

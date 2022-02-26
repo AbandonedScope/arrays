@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomArrayTxtReaderImpl implements CustomArrayTxtReader {
-    static Logger logger = LogManager.getLogger(CustomArrayTxtReaderImpl.class.getName());
+    static Logger logger = LogManager.getLogger(CustomArrayTxtReaderImpl.class);
 
     @Override
     public List<String> readStringsFromFile(String path) throws CustomException { // FIXME: 23.02.2022 If file readonly throw exception
@@ -38,7 +38,8 @@ public class CustomArrayTxtReaderImpl implements CustomArrayTxtReader {
             }
 
         } catch (IOException e) {
-            logger.log(Level.WARN, "File {} is not found.", path);
+            logger.log(Level.ERROR, "File " + path + " is not found or is not readable.", e);
+            throw new CustomException("File " + path + " is not found or is not readable.", e);
         }
 
         return result;

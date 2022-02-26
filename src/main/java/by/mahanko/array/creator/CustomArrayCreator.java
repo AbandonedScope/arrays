@@ -1,4 +1,4 @@
-package by.mahanko.array.main.creator;
+package by.mahanko.array.creator;
 
 import by.mahanko.array.entity.CustomArray;
 

@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 
 public class ArrayManipulationServiceImpl implements ArrayManipulationService {
-    static Logger logger = LogManager.getLogger(ArrayManipulationServiceImpl.class.getName());
+    static Logger logger = LogManager.getLogger(ArrayManipulationServiceImpl.class);
 
     @Override
     public void replaceAllNegativeElements(CustomArray array, int valueToReplaceWith) throws CustomException {
