@@ -13,10 +13,13 @@ public class CustomArrayStringValidator { // FIXME: 23.02.2022 Singleton pattern
         boolean matches;
         if (stringOfIntegers == null) {
             matches = false;
+            logger.info("Null string");
         } else if(stringOfIntegers.isBlank()) {
             matches = true;
+            logger.info("Blank string");
         } else {
             matches = Pattern.matches(INTS_SEPARATED_BY_SPACE, stringOfIntegers);
+            logger.info("Validation of string. Result : " + matches);
         }
 
         return matches;
