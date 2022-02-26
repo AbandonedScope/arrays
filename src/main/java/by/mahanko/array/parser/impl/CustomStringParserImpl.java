@@ -17,7 +17,7 @@ public class CustomStringParserImpl implements CustomStringParser {
     @Override
     public int[] parseString(String stringToParse) throws CustomException {
         int[] result = null;
-        CustomArrayStringValidator validator = new CustomArrayStringValidator();
+        CustomArrayStringValidator validator = CustomArrayStringValidator.getInstance();
         if (validator.validateString(stringToParse)) {
             if(!stringToParse.isBlank()) {
                 result = Arrays.stream(stringToParse.split(SPLITTER))

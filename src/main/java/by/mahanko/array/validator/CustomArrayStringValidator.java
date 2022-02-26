@@ -7,14 +7,26 @@ import java.util.regex.Pattern;
 
 public class CustomArrayStringValidator { // FIXME: 23.02.2022 Singleton pattern
     private static Logger logger = LogManager.getLogger(CustomArrayStringValidator.class.getName());
+    private static CustomArrayStringValidator instance;
     private static final String INTS_SEPARATED_BY_SPACE = "\s*((0|-?[1-9]\\d*)\s+)*(0|-?[1-9]\\d*)\s*";
+
+    private CustomArrayStringValidator() {
+    }
+
+    public static CustomArrayStringValidator getInstance() {
+        if (instance == null) {
+            instance = new CustomArrayStringValidator();
+        }
+
+        return instance;
+    }
 
     public boolean validateString(String stringOfIntegers) {
         boolean matches;
         if (stringOfIntegers == null) {
             matches = false;
             logger.info("Null string");
-        } else if(stringOfIntegers.isBlank()) {
+        } else if (stringOfIntegers.isBlank()) {
             matches = true;
             logger.info("Blank string");
         } else {
