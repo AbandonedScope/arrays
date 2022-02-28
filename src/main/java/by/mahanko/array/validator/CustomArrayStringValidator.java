@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.regex.Pattern;
 
-public class CustomArrayStringValidator { // FIXME: 23.02.2022 Singleton pattern
+public class CustomArrayStringValidator {
     private static Logger logger = LogManager.getLogger(CustomArrayStringValidator.class.getName());
     private static CustomArrayStringValidator instance;
     private static final String INTS_SEPARATED_BY_SPACE = "\s*((0|-?[1-9]\\d*)\s+)*(0|-?[1-9]\\d*)\s*";

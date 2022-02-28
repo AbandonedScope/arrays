@@ -11,9 +11,7 @@ import by.mahanko.array.service.impl.ArraySortServiceImpl;
 public class App {
     public static void main(String[] args) {
         try {
-            CustomStringParserImpl parser = new CustomStringParserImpl();
-            int[] a = parser.parseString("");
-            System.out.println(a.length);
+            CustomArray array = new CustomArray(1);
         }
         catch (Exception exception) {
             System.out.println("Exception");

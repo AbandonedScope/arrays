@@ -1,19 +1,30 @@
 package by.mahanko.array.entity;
 
 import by.mahanko.array.exception.CustomException;
+import by.mahanko.array.observer.impl.CustomArrayObservableImpl;
 
-public class CustomArray {
+import java.util.UUID;
+
+public class CustomArray extends CustomArrayObservableImpl {
+    private final String id;
     private int[] array;
 
     public CustomArray() {
+        this.id = UUID.randomUUID().toString(); // FIXME: 28.02.2022 create class generator in package utils
+        this.array = new int[0];
     }
 
     public CustomArray(int... array) {
+        this.id = UUID.randomUUID().toString();
         this.array = array.clone();
     }
 
     public int length() {
         return array.length;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public int[] getArray() {
@@ -22,6 +33,7 @@ public class CustomArray {
 
     public void setArray(int... array) {
         this.array = array.clone();
+        notifyObservers();
     }
 
     public int getElement(int index) throws CustomException {
@@ -38,6 +50,7 @@ public class CustomArray {
         }
 
         array[index] = value;
+        notifyObservers();
     }
 
     @Override
@@ -83,5 +96,4 @@ public class CustomArray {
         int hashCode = this.array.hashCode();
         return hashCode;
     }
-
 }

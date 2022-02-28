@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="some changes">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/emptifiletest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/oneblanklinetestfile.txt" afterDir="false" />
+    <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="validator class singleton realisation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/observer/CustomArrayObservable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/observer/CustomArrayObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/observer/impl/CustomArrayEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/observer/impl/CustomArrayObservableImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/repository/CustomArraysRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/main/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/main/creator/CustomArrayCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/creator/CustomArrayCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/main/creator/impl/CustomArrayCreatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/creator/impl/CustomArrayCreatorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/parser/impl/CustomStringParserImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/impl/CustomArrayTxtReaderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/reader/impl/CustomArrayTxtReaderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayCalculateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayCalculateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayManipulationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArrayManipulationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySearchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySortServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/service/impl/ArraySortServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/validator/CustomArrayStringValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/validator/CustomArrayStringValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/mahanko/array/reader/CustomArrayTxtReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/mahanko/array/reader/CustomArrayTxtReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/mahanko/array/validator/CustomArrayStringValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/mahanko/array/validator/CustomArrayStringValidatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,7 +63,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="TestNG.CustomArrayStringValidatorTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.mahanko.array.main.App" />
       <module name="arrays" />
@@ -147,9 +142,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="TestNG.CustomArrayStringValidatorTest" />
         <item itemvalue="TestNG.&lt;default&gt;" />
-        <item itemvalue="Application.App" />
         <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateBlankStringTest" />
         <item itemvalue="TestNG.CustomArrayStringValidatorTest.validateEmptyStringTest" />
       </list>
@@ -172,28 +167,9 @@
       <workItem from="1645628056750" duration="8715000" />
       <workItem from="1645700068909" duration="155000" />
       <workItem from="1645768985630" duration="2000" />
-      <workItem from="1645873457070" duration="3617000" />
-    </task>
-    <task id="LOCAL-00068" summary="logs added">
-      <created>1645400324379</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1645400324379</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Unused import removed">
-      <created>1645400461967</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1645400461967</updated>
-    </task>
-    <task id="LOCAL-00070" summary=".idea excluded">
-      <created>1645401000977</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1645401000977</updated>
+      <workItem from="1645873457070" duration="9559000" />
+      <workItem from="1646065941349" duration="50000" />
+      <workItem from="1646074141893" duration="6096000" />
     </task>
     <task id="LOCAL-00071" summary=".idea files added">
       <created>1645401148610</created>
@@ -517,7 +493,28 @@
       <option name="project" value="LOCAL" />
       <updated>1645638387412</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="some changes">
+      <created>1645877112436</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1645877112436</updated>
+    </task>
+    <task id="LOCAL-00118" summary="logging added">
+      <created>1645881503896</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1645881503896</updated>
+    </task>
+    <task id="LOCAL-00119" summary="validator class singleton realisation">
+      <created>1645888525462</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1645888525462</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,8 +533,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="renamed" />
-    <MESSAGE value="moved to impl package" />
     <MESSAGE value="initial create" />
     <MESSAGE value="import changes" />
     <MESSAGE value="readStringsFromFile method added" />
@@ -561,6 +556,8 @@
     <MESSAGE value="assertEquals changed to assertTrue nd assertFalse" />
     <MESSAGE value="equals method changed" />
     <MESSAGE value="some changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
+    <MESSAGE value="logging added" />
+    <MESSAGE value="validator class singleton realisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="validator class singleton realisation" />
   </component>
 </project>
