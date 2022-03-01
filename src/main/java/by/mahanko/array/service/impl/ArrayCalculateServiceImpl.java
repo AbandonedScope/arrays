@@ -14,11 +14,11 @@ public class ArrayCalculateServiceImpl implements ArrayCalculateService {
     static Logger logger = LogManager.getLogger(ArrayCalculateServiceImpl.class);
 
     @Override
-    public int countElementsSum(CustomArray array) throws CustomException {
-        if (array == null || array.length() == 0) {
+    public int countElementsSum(CustomArray array) {
+/*        if (array == null || array.length() == 0) {
             logger.log(Level.ERROR, "Array equals null or array length equals 0");
             throw new CustomException("Array equals null or array length equals 0");
-        }
+        }*/
         int sum = Arrays.stream(array.getArray())
                 .sum();
         logger.info("Elements sum - " + sum);

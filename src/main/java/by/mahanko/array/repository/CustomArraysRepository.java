@@ -5,6 +5,7 @@ import by.mahanko.array.specification.CustomArraySpecification;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.List;
 
 public class CustomArraysRepository {
@@ -35,8 +36,8 @@ public class CustomArraysRepository {
         return arrays.add(array);
     }
 
-    public boolean remove(Object o) {
-        return arrays.remove(o);
+    public boolean remove(CustomArray array) {
+        return arrays.remove(array);
     }
 
     public boolean addAll(Collection<? extends CustomArray> c) {
@@ -50,5 +51,9 @@ public class CustomArraysRepository {
     public List<CustomArray> query(CustomArraySpecification specification) {
         List<CustomArray> queryResult = this.arrays.stream().filter(array -> specification.specify(array)).toList();
         return queryResult;
+    }
+
+    public void sort(Comparator<CustomArray> comparator) {
+        arrays.sort(comparator);
     }
 }

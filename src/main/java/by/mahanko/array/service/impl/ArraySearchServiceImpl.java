@@ -20,13 +20,13 @@ public class ArraySearchServiceImpl implements ArraySearchService {
     }
 
     @Override
-    public OptionalInt findMinimum(CustomArray array) throws CustomException {
+    public OptionalInt findMinimum(CustomArray array) {
         OptionalInt minimum = Arrays.stream(array.getArray()).min();
         return minimum;
     }
 
     @Override
-    public long findAmountOfPositiveElements(CustomArray array) throws CustomException {
+    public long findAmountOfPositiveElements(CustomArray array) {
         long amountOfPositiveElements = Arrays
                 .stream(array.getArray())
                 .filter(x -> x > 0)
@@ -36,7 +36,7 @@ public class ArraySearchServiceImpl implements ArraySearchService {
     }
 
     @Override
-    public long findAmountOfNegativeElements(CustomArray array) throws CustomException {
+    public long findAmountOfNegativeElements(CustomArray array) {
         long amountOfNegativeElements = Arrays
                 .stream(array.getArray())
                 .filter(x -> x < 0)
