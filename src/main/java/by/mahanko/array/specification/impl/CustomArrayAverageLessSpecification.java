@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class CustomArrayAverageLessSpecification implements CustomArraySpecification {
-    private Logger logger = LogManager.getLogger(CustomArrayAverageLessSpecification.class);
+    private static Logger logger = LogManager.getLogger(CustomArrayAverageLessSpecification.class);
     private double numberToCompare;
 
     public CustomArrayAverageLessSpecification (double numberToCompare) {

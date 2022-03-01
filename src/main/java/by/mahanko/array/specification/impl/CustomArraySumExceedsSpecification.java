@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class CustomArraySumExceedsSpecification implements CustomArraySpecification {
-    private Logger logger = LogManager.getLogger(CustomArraySumExceedsSpecification.class);
+    private static Logger logger = LogManager.getLogger(CustomArraySumExceedsSpecification.class);
     private int numberToCompare;
 
     public CustomArraySumExceedsSpecification(int numberToCompare) {

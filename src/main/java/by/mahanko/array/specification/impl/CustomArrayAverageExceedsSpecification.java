@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class CustomArrayAverageExceedsSpecification implements CustomArraySpecification {
-    private Logger logger = LogManager.getLogger(CustomArrayAverageExceedsSpecification.class);
+    private static Logger logger = LogManager.getLogger(CustomArrayAverageExceedsSpecification.class);
     private double numberToCompare;
 
     public CustomArrayAverageExceedsSpecification (double numberToCompare) {

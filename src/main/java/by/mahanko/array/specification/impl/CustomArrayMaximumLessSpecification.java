@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class CustomArrayMaximumLessSpecification implements CustomArraySpecification {
-    private Logger logger = LogManager.getLogger(CustomArrayMaximumLessSpecification.class);
+    private static Logger logger = LogManager.getLogger(CustomArrayMaximumLessSpecification.class);
     private int numberToCompare;
 
     public CustomArrayMaximumLessSpecification(int numberToCompare) {
