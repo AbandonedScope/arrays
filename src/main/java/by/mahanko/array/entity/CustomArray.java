@@ -1,7 +1,6 @@
 package by.mahanko.array.entity;
 
 import by.mahanko.array.exception.CustomException;
-import by.mahanko.array.observer.impl.CustomArrayObservableImpl;
 import by.mahanko.array.util.impl.CustomArrayIdGeneratorImpl;
 
 public class CustomArray extends CustomArrayObservableImpl {

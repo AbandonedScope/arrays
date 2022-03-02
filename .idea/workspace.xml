@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="some changes">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/observer/impl/CustomArrayObservableImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArrayObservableImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/observer/impl/CustomArrayObserverImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/observer/impl/CustomArrayObserverImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +170,7 @@
       <workItem from="1646074141893" duration="6162000" />
       <workItem from="1646145639695" duration="12038000" />
       <workItem from="1646234103316" duration="2273000" />
+      <workItem from="1646240207227" duration="121000" />
     </task>
     <task id="LOCAL-00077" summary="constructors added">
       <created>1645463932367</created>

@@ -1,7 +1,8 @@
-package by.mahanko.array.observer.impl;
+package by.mahanko.array.entity;
 
 import by.mahanko.array.observer.CustomArrayObservable;
 import by.mahanko.array.observer.CustomArrayObserver;
+import by.mahanko.array.observer.impl.CustomArrayEvent;
 
 import java.util.ArrayList;
 import java.util.List;
