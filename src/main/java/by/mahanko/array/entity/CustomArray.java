@@ -2,20 +2,19 @@ package by.mahanko.array.entity;
 
 import by.mahanko.array.exception.CustomException;
 import by.mahanko.array.observer.impl.CustomArrayObservableImpl;
-
-import java.util.UUID;
+import by.mahanko.array.util.impl.CustomArrayIdGeneratorImpl;
 
 public class CustomArray extends CustomArrayObservableImpl {
     private final String id;
     private int[] array;
 
     public CustomArray() {
-        this.id = UUID.randomUUID().toString(); // FIXME: 28.02.2022 create class generator in package utils
+        this.id = CustomArrayIdGeneratorImpl.getInstance().generate();
         this.array = new int[0];
     }
 
     public CustomArray(int... array) {
-        this.id = UUID.randomUUID().toString();
+        this.id = CustomArrayIdGeneratorImpl.getInstance().generate();
         this.array = array.clone();
     }
 

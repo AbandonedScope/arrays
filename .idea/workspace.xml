@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83250fa5-1591-4703-9e29-899de1841a50" name="Changes" comment="some changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/observer/impl/CustomArrayObserverImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/util/CustomArrayIdGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/util/impl/CustomArrayIdGeneratorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArrayWarehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArrayWarehouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/main/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mahanko/array/entity/CustomArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -56,6 +56,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="by.mahanko.array.util" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -165,14 +170,7 @@
       <workItem from="1646065941349" duration="50000" />
       <workItem from="1646074141893" duration="6162000" />
       <workItem from="1646145639695" duration="12038000" />
-      <workItem from="1646234103316" duration="1341000" />
-    </task>
-    <task id="LOCAL-00075" summary="log level changed from error to warn">
-      <created>1645460157425</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1645460157425</updated>
+      <workItem from="1646234103316" duration="1839000" />
     </task>
     <task id="LOCAL-00076" summary="more logs">
       <created>1645460288892</created>
@@ -510,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646162495592</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="some changes">
+      <created>1646236437615</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1646236437616</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
