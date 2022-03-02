@@ -1,34 +1,37 @@
 package by.mahanko.array.entity;
 
+import java.util.OptionalDouble;
+import java.util.OptionalInt;
+
 public class CustomArrayData {
-    private int maximum;
-    private int minimum;
+    private OptionalInt maximum;
+    private OptionalInt minimum;
     private int sum;
-    private double average;
+    private OptionalDouble average;
 
     public CustomArrayData() {
     }
 
-    public CustomArrayData(int maximum, int minimum, int sum, double average) {
+    public CustomArrayData(OptionalInt maximum, OptionalInt minimum, int sum, OptionalDouble average) {
         this.maximum = maximum;
         this.minimum = minimum;
         this.sum = sum;
         this.average = average;
     }
 
-    public int getMaximum() {
+    public OptionalInt getMaximum() {
         return maximum;
     }
 
-    public void setMaximum(int maximum) {
+    public void setMaximum(OptionalInt maximum) {
         this.maximum = maximum;
     }
 
-    public int getMinimum() {
+    public OptionalInt getMinimum() {
         return minimum;
     }
 
-    public void setMinimum(int minimum) {
+    public void setMinimum(OptionalInt minimum) {
         this.minimum = minimum;
     }
 
@@ -40,11 +43,11 @@ public class CustomArrayData {
         this.sum = sum;
     }
 
-    public double getAverage() {
+    public OptionalDouble getAverage() {
         return average;
     }
 
-    public void setAverage(double average) {
+    public void setAverage(OptionalDouble average) {
         this.average = average;
     }
 }

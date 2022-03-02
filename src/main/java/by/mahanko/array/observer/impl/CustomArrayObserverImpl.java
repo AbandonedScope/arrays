@@ -20,20 +20,12 @@ public class CustomArrayObserverImpl implements CustomArrayObserver {
         ArraySearchServiceImpl searchService = new ArraySearchServiceImpl();
         ArrayCalculateServiceImpl calculateService = new ArrayCalculateServiceImpl();
         OptionalInt minimum = searchService.findMinimum(changedArray);
-        if (minimum.isPresent()) {
-            arrayData.setMinimum(minimum.getAsInt());
-        }
-
+        arrayData.setMinimum(minimum);
         OptionalInt maximum = searchService.findMaximum(changedArray);
-        if (maximum.isPresent()) {
-            arrayData.setMaximum(maximum.getAsInt());
-        }
-
+        arrayData.setMaximum(maximum);
         int sum = calculateService.countElementsSum(changedArray);
         arrayData.setSum(sum);
         OptionalDouble average = calculateService.countAverage(changedArray);
-        if (average.isPresent()) {
-            arrayData.setAverage(average.getAsDouble());
-        }
+        arrayData.setAverage(average);
     }
 }

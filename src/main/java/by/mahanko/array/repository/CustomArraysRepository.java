@@ -9,8 +9,8 @@ import java.util.Comparator;
 import java.util.List;
 
 public class CustomArraysRepository {
-    private List<CustomArray> arrays;
     private static CustomArraysRepository instance;
+    private List<CustomArray> arrays;
 
     private CustomArraysRepository() {
         arrays = new ArrayList<CustomArray>();
