@@ -32,7 +32,7 @@ public class CustomArrayStringValidator {
             logger.info("Blank string");
         } else {
             matches = Pattern.matches(INTS_SEPARATED_BY_SPACE, stringOfIntegers);
-            logger.log(Level.INFO, "Validation of string. Result : {0}", matches);
+            logger.log(Level.INFO, "Validation of string. Result : {}", matches);
         }
 
         return matches;

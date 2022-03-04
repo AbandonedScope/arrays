@@ -40,6 +40,6 @@ public class ArrayManipulationServiceImpl implements ArrayManipulationService {
                 .map(x -> (x >= lowerBound && x <= uppedBound) ? valueToReplaceWith : x)
                 .toArray();
         array.setArray(arrayWithReplacedInRangeElements);
-        logger.log(Level.INFO, "Array elements in region from {0} to {1} were replaced with - {2}", lowerBound, uppedBound, valueToReplaceWith);
+        logger.log(Level.INFO, "Array elements in region from {} to {} were replaced with - {}", lowerBound, uppedBound, valueToReplaceWith);
     }
 }

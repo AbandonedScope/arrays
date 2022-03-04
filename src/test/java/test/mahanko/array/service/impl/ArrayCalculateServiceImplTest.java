@@ -1,7 +1,6 @@
 package test.mahanko.array.service.impl;
 
 import by.mahanko.array.entity.CustomArray;
-import by.mahanko.array.exception.CustomException;
 import by.mahanko.array.service.impl.ArrayCalculateServiceImpl;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -43,14 +42,11 @@ public class ArrayCalculateServiceImplTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @Test(expectedExceptions = CustomException.class)
+    @Test
     public void countElementsSumEmptyArrayTest() {
-        service.countElementsSum(entityEmptyArray);
-    }
-
-    @Test(expectedExceptions = CustomException.class)
-    public void countElementsSumNullArrayTest() {
-        service.countElementsSum(null);
+        int actual = service.countElementsSum(entityEmptyArray);
+        int expected = 0;
+        Assert.assertEquals(actual, expected);
     }
 
     @Test
