@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CustomStringParserTest {
-    private CustomStringParserImpl parser = new CustomStringParserImpl();
+    private final CustomStringParserImpl parser = new CustomStringParserImpl();
     private final String correctStringToParse = "1 -25 0 36 13 -2";
     private final String incorrectStringToParse = "1 --25 0 36 13 -2";
 

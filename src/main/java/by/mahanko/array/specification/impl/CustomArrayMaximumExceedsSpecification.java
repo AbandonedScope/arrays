@@ -8,8 +8,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class CustomArrayMaximumExceedsSpecification implements CustomArraySpecification {
-    private static Logger logger = LogManager.getLogger(CustomArrayMaximumExceedsSpecification.class);
-    private int numberToCompare;
+    private static final Logger logger = LogManager.getLogger(CustomArrayMaximumExceedsSpecification.class);
+    private final int numberToCompare;
 
     public CustomArrayMaximumExceedsSpecification(int numberToCompare) {
         this.numberToCompare = numberToCompare;

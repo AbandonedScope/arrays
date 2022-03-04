@@ -4,7 +4,7 @@ import by.mahanko.array.entity.CustomArray;
 import by.mahanko.array.specification.CustomArraySpecification;
 
 public class CustomArrayLengthExceedsSpecification implements CustomArraySpecification {
-    private int numberToCompare;
+    private final int numberToCompare;
 
     public CustomArrayLengthExceedsSpecification(int numberToCompare) {
         this.numberToCompare = numberToCompare;

@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 
 public class ArrayManipulationServiceImpl implements ArrayManipulationService {
-    static Logger logger = LogManager.getLogger(ArrayManipulationServiceImpl.class);
+    static final Logger logger = LogManager.getLogger(ArrayManipulationServiceImpl.class);
 
     @Override
     public void replaceAllNegativeElements(CustomArray array, int valueToReplaceWith) throws CustomException {
@@ -25,7 +25,7 @@ public class ArrayManipulationServiceImpl implements ArrayManipulationService {
                 .map(x -> x < 0 ? valueToReplaceWith : x)
                 .toArray();
         array.setArray(arrayWithReplacedNegativeElements);
-        logger.info("Array negative elements were replaced with - " + valueToReplaceWith);
+        logger.log(Level.INFO, "Array negative elements were replaced with - {}", valueToReplaceWith);
     }
 
     @Override
@@ -40,6 +40,6 @@ public class ArrayManipulationServiceImpl implements ArrayManipulationService {
                 .map(x -> (x >= lowerBound && x <= uppedBound) ? valueToReplaceWith : x)
                 .toArray();
         array.setArray(arrayWithReplacedInRangeElements);
-        logger.info("Array elements in region from " + lowerBound + " to " + uppedBound + " were replaced with - " + valueToReplaceWith);
+        logger.log(Level.INFO, "Array elements in region from {0} to {1} were replaced with - {2}", lowerBound, uppedBound, valueToReplaceWith);
     }
 }

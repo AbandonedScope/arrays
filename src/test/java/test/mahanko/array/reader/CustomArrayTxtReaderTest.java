@@ -5,12 +5,11 @@ import by.mahanko.array.reader.impl.CustomArrayTxtReaderImpl;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class CustomArrayTxtReaderTest {
-    private CustomArrayTxtReaderImpl reader = new CustomArrayTxtReaderImpl();
+    private final CustomArrayTxtReaderImpl reader = new CustomArrayTxtReaderImpl();
     private final String pathToNonexistentFile = "non-existent-file.txt";
     private final String pathToExistFile = "src/test/resources/customarraytxtreadertestfile.txt";
     private final String pathToEmptyFile = "src/test/resources/emptifiletest.txt";

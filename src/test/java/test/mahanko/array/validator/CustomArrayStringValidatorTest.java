@@ -1,12 +1,11 @@
 package test.mahanko.array.validator;
 
-import by.mahanko.array.exception.CustomException;
 import by.mahanko.array.validator.CustomArrayStringValidator;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CustomArrayStringValidatorTest {
-    private CustomArrayStringValidator validator = CustomArrayStringValidator.getInstance();
+    private final CustomArrayStringValidator validator = CustomArrayStringValidator.getInstance();
     private final String positiveElementsString = "1 2 3 4 5 6 7 8 9";
     private final String negativeElementsString = "-1 -2 -3 -4 -5 -6 -7 -8 -9";
     private final String mixedString = "-1 2 16 365 -25 0 26";

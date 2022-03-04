@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.Comparator;
 
 public class CustomArrayFirstElementComparator implements Comparator<CustomArray> {
-    private static Logger logger = LogManager.getLogger(CustomArrayFirstElementComparator.class);
+    private static final Logger logger = LogManager.getLogger(CustomArrayFirstElementComparator.class);
 
     @Override
     public int compare(CustomArray firstArray, CustomArray secondArray) {

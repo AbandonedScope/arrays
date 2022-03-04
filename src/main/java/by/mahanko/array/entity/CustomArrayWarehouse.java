@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CustomArrayWarehouse {
-    private Map<String, CustomArrayData> arrays;
+    private final Map<String, CustomArrayData> arrays;
     private static CustomArrayWarehouse instance;
 
     private CustomArrayWarehouse() {

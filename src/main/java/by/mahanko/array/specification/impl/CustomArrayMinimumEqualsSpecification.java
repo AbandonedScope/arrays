@@ -8,8 +8,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class CustomArrayMinimumEqualsSpecification implements CustomArraySpecification {
-    private static Logger logger = LogManager.getLogger(CustomArrayMinimumEqualsSpecification.class);
-    private int numberToCompare;
+    private static final Logger logger = LogManager.getLogger(CustomArrayMinimumEqualsSpecification.class);
+    private final int numberToCompare;
 
     public CustomArrayMinimumEqualsSpecification(int numberToCompare) {
         this.numberToCompare = numberToCompare;

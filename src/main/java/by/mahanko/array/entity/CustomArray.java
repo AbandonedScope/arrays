@@ -3,6 +3,8 @@ package by.mahanko.array.entity;
 import by.mahanko.array.exception.CustomException;
 import by.mahanko.array.util.impl.CustomArrayIdGeneratorImpl;
 
+import java.util.Arrays;
+
 public class CustomArray extends CustomArrayObservableImpl {
     private final String id;
     private int[] array;
@@ -55,7 +57,7 @@ public class CustomArray extends CustomArrayObservableImpl {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         for (int element : array) {
-            stringBuilder.append(element + " ");
+            stringBuilder.append(element).append(" ");
         }
 
         return stringBuilder.toString();
@@ -91,7 +93,6 @@ public class CustomArray extends CustomArrayObservableImpl {
 
     @Override
     public int hashCode() {
-        int hashCode = this.array.hashCode();
-        return hashCode;
+        return Arrays.hashCode(array);
     }
 }

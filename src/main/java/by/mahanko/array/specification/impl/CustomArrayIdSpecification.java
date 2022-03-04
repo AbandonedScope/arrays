@@ -4,7 +4,7 @@ import by.mahanko.array.entity.CustomArray;
 import by.mahanko.array.specification.CustomArraySpecification;
 
 public class CustomArrayIdSpecification implements CustomArraySpecification {
-    private String arrayId;
+    private final String arrayId;
 
     public CustomArrayIdSpecification(String arrayId) {
         this.arrayId = arrayId;
@@ -16,6 +16,6 @@ public class CustomArrayIdSpecification implements CustomArraySpecification {
             return false;
         }
 
-        return this.arrayId == array.getId();
+        return this.arrayId.equals(array.getId());
     }
 }

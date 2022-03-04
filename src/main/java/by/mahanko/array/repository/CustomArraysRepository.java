@@ -10,10 +10,10 @@ import java.util.List;
 
 public class CustomArraysRepository {
     private static CustomArraysRepository instance;
-    private List<CustomArray> arrays;
+    private final List<CustomArray> arrays;
 
     private CustomArraysRepository() {
-        arrays = new ArrayList<CustomArray>();
+        arrays = new ArrayList<>();
     }
 
     public static CustomArraysRepository getInstance() {
@@ -44,13 +44,12 @@ public class CustomArraysRepository {
         return arrays.addAll(c);
     }
 
-    public boolean removeAll(Collection<?> c) {
+    public boolean removeAll(Collection<? extends CustomArray> c) {
         return arrays.removeAll(c);
     }
 
     public List<CustomArray> query(CustomArraySpecification specification) {
-        List<CustomArray> queryResult = this.arrays.stream().filter(array -> specification.specify(array)).toList();
-        return queryResult;
+        return this.arrays.stream().filter(specification::specify).toList();
     }
 
     public void sort(Comparator<CustomArray> comparator) {

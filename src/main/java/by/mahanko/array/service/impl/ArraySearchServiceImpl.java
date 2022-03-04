@@ -1,9 +1,9 @@
 package by.mahanko.array.service.impl;
 
-import by.mahanko.array.exception.CustomException;
 import by.mahanko.array.entity.CustomArray;
 
 import by.mahanko.array.service.ArraySearchService;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -11,18 +11,16 @@ import java.util.Arrays;
 import java.util.OptionalInt;
 
 public class ArraySearchServiceImpl implements ArraySearchService {
-    static Logger logger = LogManager.getLogger(ArraySearchServiceImpl.class);
+    static final Logger logger = LogManager.getLogger(ArraySearchServiceImpl.class);
 
     @Override
     public OptionalInt findMaximum(CustomArray array) {
-        OptionalInt maximum = Arrays.stream(array.getArray()).max();
-        return maximum;
+        return Arrays.stream(array.getArray()).max();
     }
 
     @Override
     public OptionalInt findMinimum(CustomArray array) {
-        OptionalInt minimum = Arrays.stream(array.getArray()).min();
-        return minimum;
+        return Arrays.stream(array.getArray()).min();
     }
 
     @Override
@@ -31,7 +29,7 @@ public class ArraySearchServiceImpl implements ArraySearchService {
                 .stream(array.getArray())
                 .filter(x -> x > 0)
                 .count();
-        logger.info("Amount of positive elements in array - " + amountOfPositiveElements);
+        logger.log(Level.INFO, "Amount of positive elements in array - {}", amountOfPositiveElements);
         return amountOfPositiveElements;
     }
 
@@ -41,7 +39,7 @@ public class ArraySearchServiceImpl implements ArraySearchService {
                 .stream(array.getArray())
                 .filter(x -> x < 0)
                 .count();
-        logger.info("Amount of negative elements in array - " + amountOfNegativeElements);
+        logger.log(Level.INFO, "Amount of negative elements in array - {}", amountOfNegativeElements);
         return amountOfNegativeElements;
     }
 }

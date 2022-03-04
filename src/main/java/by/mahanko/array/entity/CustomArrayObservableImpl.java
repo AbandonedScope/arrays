@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class CustomArrayObservableImpl implements CustomArrayObservable {
-    private List<CustomArrayObserver> observers = new ArrayList<CustomArrayObserver>();
+    private final List<CustomArrayObserver> observers = new ArrayList<>();
 
     @Override
     public void attach(CustomArrayObserver observer) {

@@ -4,7 +4,6 @@ import by.mahanko.array.entity.CustomArray;
 import by.mahanko.array.entity.CustomArrayData;
 import by.mahanko.array.entity.CustomArrayWarehouse;
 import by.mahanko.array.observer.CustomArrayObserver;
-import by.mahanko.array.observer.impl.CustomArrayEvent;
 import by.mahanko.array.service.impl.ArrayCalculateServiceImpl;
 import by.mahanko.array.service.impl.ArraySearchServiceImpl;
 
@@ -12,7 +11,6 @@ import java.util.OptionalDouble;
 import java.util.OptionalInt;
 
 public class CustomArrayObserverImpl implements CustomArrayObserver {
-
     @Override
     public void arrayChanged(CustomArrayEvent event) {
         CustomArray changedArray = event.getSource();

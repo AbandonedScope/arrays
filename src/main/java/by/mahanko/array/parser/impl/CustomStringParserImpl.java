@@ -11,12 +11,12 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class CustomStringParserImpl implements CustomStringParser {
-    private static Logger logger = LogManager.getLogger(CustomStringParserImpl.class);
+    private static final Logger logger = LogManager.getLogger(CustomStringParserImpl.class);
     private static final String SPLITTER = "\s+";
 
     @Override
     public int[] parseString(String stringToParse) throws CustomException {
-        int[] result = null;
+        int[] result;
         CustomArrayStringValidator validator = CustomArrayStringValidator.getInstance();
         if (validator.validateString(stringToParse)) {
             if(!stringToParse.isBlank()) {
@@ -28,7 +28,7 @@ public class CustomStringParserImpl implements CustomStringParser {
             }
 
         } else {
-            logger.log(Level.ERROR, "Invalid string : " + stringToParse);
+            logger.log(Level.ERROR, "Invalid string : {}", stringToParse);
             throw new CustomException("Invalid string : " + stringToParse);
         }
 
@@ -37,7 +37,7 @@ public class CustomStringParserImpl implements CustomStringParser {
 
     @Override
     public int[] parseValidString(String stringToParse) throws CustomException {
-        int[] result = null;
+        int[] result;
         try {
             if(!stringToParse.isBlank()) {
                 result = Arrays.stream(stringToParse.split(SPLITTER))
@@ -48,7 +48,7 @@ public class CustomStringParserImpl implements CustomStringParser {
             }
 
         } catch (Exception exception) {
-            logger.log(Level.ERROR, "Invalid string : " + stringToParse, exception);
+            logger.log(Level.ERROR, "Invalid string : {}", stringToParse, exception);
             throw new CustomException(exception);
         }
 

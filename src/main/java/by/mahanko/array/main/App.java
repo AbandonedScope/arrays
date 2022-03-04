@@ -1,23 +1,15 @@
 package by.mahanko.array.main;
 
-import by.mahanko.array.entity.CustomArray;
-import by.mahanko.array.entity.CustomArrayData;
-import by.mahanko.array.entity.CustomArrayWarehouse;
-import by.mahanko.array.parser.impl.CustomStringParserImpl;
-import by.mahanko.array.service.impl.ArrayCalculateServiceImpl;
-import by.mahanko.array.service.impl.ArrayManipulationServiceImpl;
-import by.mahanko.array.service.impl.ArraySearchServiceImpl;
-import by.mahanko.array.service.impl.ArraySortServiceImpl;
-
+import by.mahanko.array.exception.CustomException;
+import by.mahanko.array.reader.impl.CustomArrayTxtReaderImpl;
 
 public class App {
     public static void main(String[] args) {
+        CustomArrayTxtReaderImpl reader = new CustomArrayTxtReaderImpl();
         try {
-            CustomArray array = new CustomArray(1, 2, 3);
+            reader.readStringsFromFile("dgdfgfg");
+        } catch (CustomException e) {
+            System.out.println(e.getMessage());
         }
-        catch (Exception exception) {
-            System.out.println("Exception");
-        }
-
     }
 }
